@@ -6,7 +6,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 // Our function that generates our html plugins
 function generateHtmlPlugins (templateDir) {
-  // Read files in /html directory 
+  // Read files in /html directory
   const templateFiles = fs
     .readdirSync(path.resolve(__dirname, templateDir))
     .filter(function(file){ //ignore folder
@@ -53,7 +53,7 @@ function reloadHtml() {
 }
 
 const copyWebPack = new CopyWebpackPlugin([
-  { 
+  {
     from: 'src/externals',
     to: 'externals',
     ignore: ['__What is this folder for?']
@@ -78,12 +78,12 @@ module.exports = {
     'rules': [
       { // HTML
         'test': /\.html$/,
-        'use': [{ 
-          'loader': "html-loader", 
+        'use': [{
+          'loader': "html-loader",
           'options': {
             'minimize': false,
             'interpolate': true // allow HTML snippets with commonJs require tags
-          } 
+          }
         }]
       },
       { // JavaScript and JSX only (no JSON)
@@ -96,7 +96,7 @@ module.exports = {
       },
       { // Images
         'test': /\.(png|svg|jpg|gif)$/,
-        'use': {  
+        'use': {
           'loader': 'file-loader',
           'options': {
             'name': "[name].[ext]",
@@ -105,7 +105,7 @@ module.exports = {
         }
       },
       { // Font files
-	'test': /\.(woff(2)?|ttf|eot|otf)(\?v=\d+\.\d+\.\d+)?$/,      
+	'test': /\.(woff(2)?|ttf|eot|otf)(\?v=\d+\.\d+\.\d+)?$/,
         'use': [{
             'loader': 'file-loader',
             'options': {

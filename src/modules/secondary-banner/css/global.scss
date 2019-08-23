@@ -1,0 +1,53 @@
+.secondary-banner {
+    padding: 50px 50px;
+}
+
+.secondary-banner__wrapper {
+    margin: 0 auto;
+    max-width: 1640px;
+    height: 690px;
+    position: relative;
+}
+
+.secondary-banner__image {
+    object-fit: cover;
+}
+
+.secondary-banner__box {
+    position: absolute;
+    bottom: 90px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.88);
+    padding: 45px;
+}
+
+.secondary-banner__box-title {
+    color: white;
+    font-family: Dax;
+    font-size: 48px;
+    margin: 0;
+    padding: 0;
+}
+
+.secondary-banner__box-subtitle {
+    color: white;
+    font-family: Arial;
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    max-width: 600px;
+}
+
+.secondary-banner__cta {
+    color: white;
+    background-color: #D52B1E;
+    text-decoration: none;
+    padding: 18px 70px;
+    font-size: 22px;
+    font-family: Dax;
+    margin-bottom: 30px;
+}
+
+.secondary-banner__box-text {
+    margin-bottom: 50px;
+}

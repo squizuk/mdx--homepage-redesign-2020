@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Home page</title>
-        ${require('../modules/01 Global/html/head.html')}
-    </head>
-    <body>
-        <div class="page-wrapper">
-            <!--noindex-->
-            ${require('../modules/header/default/html/index.html')}
-            <!--endnoindex-->
 
-            <main class="main" role="main">
-                <span>Home page</span>
-            </main><!-- /.main -->
+<head>
+    <title>Home page</title>
+    ${require('../modules/01 Global/html/head.html')}
+</head>
 
-            <!--noindex-->
-            ${require('../modules/footer/default/html/index.html')}
-            <!--endnoindex-->
-        </div><!-- /.page-wrapper -->
-        <div class="footer-scripts">
-            ${require('../modules/01 Global/html/scripts.html')}
-        </div>
-    </body>
+<body>
+    <div class="page-wrapper">
+        <!--noindex-->
+        ${require('../modules/header/default/html/index.html')}
+        <!--endnoindex-->
+
+        <main class="main" role="main">
+            ${require('../modules/hero-banner/html/index.html')}
+            ${require('../modules/secondary-banner/html/index.html')}
+            ${require('../modules/events-block/html/index.html')}
+        </main><!-- /.main -->
+
+        <!--noindex-->
+        ${require('../modules/footer/default/html/index.html')}
+        <!--endnoindex-->
+    </div><!-- /.page-wrapper -->
+    <div class="footer-scripts">
+        ${require('../modules/01 Global/html/scripts.html')}
+    </div>
+</body>
+
 </html>
