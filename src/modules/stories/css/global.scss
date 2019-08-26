@@ -1,0 +1,114 @@
+.stories {
+    background-color: white;
+    padding: 70px 50px 100px 50px;;
+}
+
+.stories__wrapper {
+    margin: 0 auto;
+    max-width: 1640px;
+    text-align: center;
+    position: relative;
+}
+
+.stories__heading {
+    font-family: Dax;
+    font-size: 48px;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.stories__subheading {
+    font-family: Arial;
+    font-size: 28px;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.stories__boxes {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0;
+    align-items: flex-end;
+    text-align: left;
+}
+
+.stories__box--first {
+    height: 700px;
+    background-color: black;
+    width: 49%;
+    text-decoration: none;
+    position: relative;
+}
+
+.stories__box--first__wrapper {
+    position: absolute;
+    bottom: 0;
+    padding: 30px 40px;
+    background-color: #333333;
+    width: 100%;
+}
+
+.stories__box--second {
+    height: 330px;
+    background-color: #333333;
+    width: 24%;
+    padding: 30px 40px;
+    text-decoration: none;
+    z-index: 1000;
+}
+
+.stories__box--first__pattern--white {
+    height: 228px;
+    width: 232px;
+    background: repeating-linear-gradient(45deg, #ffffff, #ffffff 2px, transparent 2px, transparent 8px);
+    position: absolute;
+    right: -200px;
+    bottom: 150px;
+}
+
+.stories__box--first__pattern--red {
+    height: 478px;
+    width: 482px;
+    background-color: #D52B1E;
+    position: absolute;
+    left: 44%;
+    bottom: 130px;
+    transform: rotate(10deg);
+}
+
+.stories__box--third {
+    height: 400px;
+    background-color: #333333;
+    width: 24%;
+    padding: 30px 40px;
+    text-decoration: none;
+    z-index: 1000;
+}
+
+.stories__box--second__title {
+    color: white;
+    font-family: Dax;
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.stories__box--second__subtitle {
+    color: white;
+    font-family: Arial;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+.stories__cta {
+    color: white;
+    background-color: #D52B1E;
+    text-decoration: none;
+    padding: 18px 70px;
+    font-size: 22px;
+    font-family: Dax;
+}
