@@ -19,6 +19,7 @@
     left: 20px;
     background-color: rgba(0, 0, 0, 0.88);
     padding: 45px;
+    z-index: 10000;
 }
 
 .secondary-banner__box-title {
@@ -50,4 +51,13 @@
 
 .secondary-banner__box-text {
     margin-bottom: 50px;
+}
+
+.secondary-banner__pattern--white {
+    height: 200px;
+    width: 204px;
+    background: repeating-linear-gradient(-45deg, #ffffff, #ffffff 2px, transparent 2px, transparent 8px);
+    position: absolute;
+    left: 570px;
+    bottom: 250px;
 }

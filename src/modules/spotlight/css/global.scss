@@ -34,7 +34,7 @@
     width: 1024px;
     background-color: black;
     position: absolute;
-    right: 50px;
+    right: 110px;
     top: 250px;
     z-index: -1;
 }
@@ -63,4 +63,47 @@
     font-size: 20px;
     display: block;
     margin-bottom: 20px;
+}
+
+.spotlight__pattern--grey {
+    height: 398px;
+    width: 402px;
+    background-color: #D1D1D1;
+    position: absolute;
+    left: 100px;
+    bottom: 50px;
+    transform: rotate(-5deg);
+    z-index: -3;
+}
+
+.spotlight__pattern--white {
+    height: 388px;
+    width: 392px;
+    background: repeating-linear-gradient(-45deg, #ffffff, #ffffff 2px, transparent 2px, transparent 8px);
+    position: absolute;
+    left: 190px;
+    bottom: 10px;
+    z-index: -2;
+}
+
+.spotlight__pattern--black {
+    height: 200px;
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    right: 280px;
+    top: 200px;
+    transform: rotate(-5deg);
+    z-index: -2;
+}
+
+.spotlight__pattern--red {
+    height: 398px;
+    width: 402px;
+    background-color: #D52B1E;
+    position: absolute;
+    right: 10px;
+    top: 160px;
+    transform: rotate(5deg);
+    z-index: -3;
 }

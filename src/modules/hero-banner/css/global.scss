@@ -15,6 +15,7 @@
     left: 80px;
     background-color: rgba(0, 0, 0, 0.88);
     padding: 50px;
+    z-index: 10000;
 }
 
 .hero-banner__image {
@@ -60,6 +61,15 @@
     width: 30px;
     height: 30px;
     background: url()center center no-repeat;
+}
+
+.hero-banner__pattern--white {
+    height: 200px;
+    width: 204px;
+    background: repeating-linear-gradient(-45deg, #ffffff, #ffffff 2px, transparent 2px, transparent 8px);
+    position: absolute;
+    left: 30px;
+    bottom: 130px;
 }
 
 @media screen and (min-width: $desktop){
