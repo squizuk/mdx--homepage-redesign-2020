@@ -5,7 +5,6 @@
 .secondary-banner__wrapper {
     margin: 0 auto;
     max-width: 1640px;
-    height: 690px;
     position: relative;
 }
 
@@ -15,10 +14,10 @@
 
 .secondary-banner__box {
     position: absolute;
-    bottom: 90px;
+    bottom: 30px;
     left: 20px;
     background-color: rgba(0, 0, 0, 0.88);
-    padding: 45px;
+    padding: 35px;
     z-index: 10000;
 }
 
@@ -28,6 +27,7 @@
     font-size: 48px;
     margin: 0;
     padding: 0;
+    font-weight: 600;
 }
 
 .secondary-banner__box-subtitle {
@@ -37,6 +37,7 @@
     margin: 0;
     padding: 0;
     max-width: 600px;
+    font-weight: 400;
 }
 
 .secondary-banner__cta {
@@ -47,6 +48,7 @@
     font-size: 22px;
     font-family: Dax;
     margin-bottom: 30px;
+    font-weight: 800;
 }
 
 .secondary-banner__box-text {
@@ -59,5 +61,5 @@
     background: repeating-linear-gradient(-45deg, #ffffff, #ffffff 2px, transparent 2px, transparent 8px);
     position: absolute;
     left: 570px;
-    bottom: 250px;
+    bottom: 180px;
 }

@@ -1,6 +1,7 @@
 .infographics {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, $bg-grey 50%);
-    padding: 70px;
+    padding: 70px 10px;
+    padding-top: 30px;
     &__wrapper {
         margin: 0 auto;
         max-width: 1640px;
@@ -13,6 +14,7 @@
         color: $black;
         margin: 0;
         padding: 0;
+        font-weight: 600;
     }
     &__subheading {
         font-family: $alt-font-family;
@@ -29,6 +31,7 @@
         padding: 18px 70px;
         font-size: 22px;
         font-family: $base-font-family;
+        font-weight: 800;
     }
     &__list {
         display: block;
@@ -85,6 +88,10 @@
 }
 
 @media screen and (min-width: $tablet){
+    .infographics {
+        padding: 70px;
+        padding-top: 30px;
+    }
     .infographics__list {
         display: flex;
         justify-content: center;
@@ -102,6 +109,7 @@
         margin: 0 10px 40px 10px;
     }
 }
+
 @media screen and (min-width: $desktop){
     .infographics__pattern--white1 {
         display: block;
@@ -110,6 +118,7 @@
         display: block;
     }
 }
+
 .infographics .slick-dots {
 	display: flex;
 	justify-content: center;
@@ -133,4 +142,4 @@
 		li.slick-active button {
 			background-color: $red;
 		}
-}
+    }

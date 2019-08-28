@@ -43,7 +43,7 @@
 
 .right-navigation__item {
     display: inline-block;
-    padding: 0 8px;
+    padding: 0 5px;
 }
 
 .left-navigation__item {
@@ -53,7 +53,7 @@
 
 .right-navigation__link {
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     text-decoration: none;
 }
 
@@ -85,12 +85,11 @@
     }
 
     &__item {
-
         height: 100%;
         display: inline-block;
         position: relative;
-        padding: pxToRem(20);
-        padding-top: 40px;
+        padding: 0.5rem;
+        padding-top: 44px;
         // @include sq-transition(background-color .3s ease-in-out);
 
         &:hover, &.focusin {
@@ -111,8 +110,9 @@
 
     &__link {
         color: white;
-        font-size: 24px;
+        font-size: 18px;
         text-decoration: none;
+        font-weight: 600;
     }
 
     &__sub, &__third {
@@ -122,7 +122,7 @@
         height: 960px;
         padding: 30px;
         padding-right: 0;
-        width: 550px;
+        width: 450px;
         position: absolute;
         z-index: -1;
 
@@ -164,7 +164,7 @@
 
 .header-menu__link__sub {
     display: block;
-    font-size: 22px;
+    font-size: 18px;
     font-family: Arial;
     text-decoration: none;
     color: white;
@@ -177,7 +177,7 @@
 
 .header-menu__link__sub-title {
     display: block;
-    font-size: 32px;
+    font-size: 28px;
     font-family: Dax;
     text-decoration: none;
     color: white;
@@ -186,3 +186,31 @@
 .fa-chevron-right {
     padding-left: 10px;
 }
+
+@media screen and (min-width: $desktop){
+    .header-menu__item {
+        height: 100%;
+        display: inline-block;
+        position: relative;
+        padding: pxToRem(20);
+        padding-top: 40px;
+    }
+    .header-menu__link {
+        font-size: 24px;
+    }
+    .right-navigation__link {
+        font-size: 20px;
+    }
+    .right-navigation__item {
+        padding: 0 8px;
+    }
+    .header-menu__sub, .header-menu__third {
+        width: 550px;
+    }
+    .header-menu__link__sub {
+        font-size: 22px;
+    }
+    .header-menu__link__sub-title {
+        font-size: 32px;
+    }
+ }

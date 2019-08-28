@@ -1,6 +1,6 @@
 .spotlight {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #EFEFEF 50%);
-    padding: 70px 70px 70px 70px;
+    padding: 70px 10px 70px 10px;
 }
 
 .spotlight__wrapper {
@@ -14,24 +14,26 @@
 
 .spotlight__heading {
     font-family: Dax;
-    font-size: 48px;
+    font-size: 32px;
     color: black;
     margin: 0;
     padding: 0;
+    font-weight: 600;
 }
 
 .spotlight__subheading {
     font-family: Arial;
-    font-size: 28px;
+    font-size: 22px;
     color: black;
     margin: 0;
     padding: 0;
     margin-bottom: 80px;
+    font-weight: 400;
 }
 
 .spotlight__image {
-    height: 576px;
-    width: 1024px;
+    height: 500px;
+    width: 800px;
     background-color: black;
     position: absolute;
     right: 110px;
@@ -74,6 +76,7 @@
     bottom: 50px;
     transform: rotate(-5deg);
     z-index: -3;
+    display: none;
 }
 
 .spotlight__pattern--white {
@@ -84,6 +87,7 @@
     left: 190px;
     bottom: 10px;
     z-index: -2;
+    display: none;
 }
 
 .spotlight__pattern--black {
@@ -95,6 +99,7 @@
     top: 200px;
     transform: rotate(-5deg);
     z-index: -2;
+    display: none;
 }
 
 .spotlight__pattern--red {
@@ -106,4 +111,38 @@
     top: 160px;
     transform: rotate(5deg);
     z-index: -3;
+    display: none;
+}
+
+@media screen and (min-width: $desktop){
+    .spotlight__image {
+        height: 576px;
+        width: 1024px;
+    }
+}
+@media screen and (min-width: $tablet){
+    .spotlight__heading {
+        font-size: 48px;
+    }
+    .spotlight__subheading {
+        font-size: 28px;
+    }
+    .spotlight__pattern--grey {
+        display: block;
+    }
+    
+    .spotlight__pattern--white {
+        display: block;
+    }
+    
+    .spotlight__pattern--black {
+        display: block;
+    }
+    
+    .spotlight__pattern--red {
+        display: block;
+    }
+    .spotlight {
+        padding: 70px 70px 70px 70px;
+    }
 }

@@ -44,6 +44,26 @@ General
     text-shadow: none;
 }
 
+@font-face {
+    font-family: "Dax";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/DaxLight.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: "Dax";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/DaxMedium.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Dax";
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/Dax-Bold.ttf") format("truetype");
+  }
+
 html,
 body {
     height: 100%;
@@ -51,6 +71,7 @@ body {
 body {
     overflow-y: scroll;
     font-size: $base-font-scale + em;
+    font-family: Dax, Arial;
     line-height: 1.4;
     padding: 0;
     margin: 0;
@@ -69,6 +90,8 @@ textarea {
     font-size: inherit;
     line-height: inherit;
 }
+
+
 
 // IE10 Metro responsive
 // Required for Windows 8 Metro split-screen snapping with IE10

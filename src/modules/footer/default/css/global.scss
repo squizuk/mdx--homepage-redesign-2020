@@ -1,5 +1,4 @@
 .footer {
-    // margin-top: 200px;
     &__socials {
         background-color: rgba(209, 209, 209, 0.45);
         padding: 60px 0;
@@ -12,10 +11,11 @@
             align-items: center;
         }
         &-title {
-            color: #000000;
+            color: $black;
             font-size: 28px;
-            font-family: Dax;
+            font-family: $base-font-family;
             padding-right: 30px;
+            font-weight: 600;
         }
     }
     &__social-links {
@@ -25,17 +25,18 @@
         justify-content: center;
     }
     &__contact-us {
-        color: white;
-        background-color: #D52B1E;
+        color: $white;
+        background-color: $red;
         text-decoration: none;
         display: block;
         padding: 18px 70px;
         font-size: 22px;
-        font-family: Dax;
+        font-family: $base-font-family;
         margin-bottom: 50px;
+        font-weight: 800;
     }
     &__links {
-        background-color: #4D4D4D;
+        background-color: $grey-medium;
         padding: 70px 0;
         &-wrapper {
             margin: 0 auto;
@@ -45,6 +46,7 @@
             max-width: 1100px;
             align-items: center;
             text-align: center;
+            padding: 0 10px;
         }
         &-column {
             list-style: none;
@@ -56,14 +58,14 @@
         }
     }
     &-link {
-        color: white;
+        color: $white;
         text-decoration: none;
-        font-family: Arial;
+        font-family: $alt-font-family;
         font-size: 22px;
     }
     &__contact-item {
-        color: white;
-        font-family: Arial;
+        color: $white;
+        font-family: $alt-font-family;
         font-size: 22px;
         padding: 0;
         margin: 0;
@@ -76,11 +78,11 @@
 
 .fa-twitter, .fa-facebook-f, .fa-youtube, .fa-instagram, .fa-linkedin {
     font-size: 34px;
-    color: #000000;
+    color: $black;
     padding-right: 30px;
 }
 
-@media screen and (min-width: $desktop){
+@media screen and (min-width: $tablet){
     .footer__socials-wrapper {
         flex-direction: row;
     }
@@ -89,6 +91,7 @@
         flex-direction: row;
         text-align: left;
         align-items: flex-start;
+        padding: 0;
     }
     .footer__links-column {
         margin: 0;
