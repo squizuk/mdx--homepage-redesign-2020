@@ -73,6 +73,16 @@
     bottom: 90px;
 }
 
+.hero-banner__arrow-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    transform: translate(0, -50%);
+    text-decoration: none;
+}
+
 @media screen and (min-width: $desktop){
     .hero-banner__image {
         max-width: unset;
