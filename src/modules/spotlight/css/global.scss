@@ -35,12 +35,28 @@
     height: 500px;
     width: 800px;
     // background-color: black;
-    background-image: url(../css/files/spotlight.svg);
+    background: url(./files/spotlight.svg) no-repeat center center;
     background-size: cover;
     position: absolute;
     right: 110px;
     top: 250px;
     z-index: -1;
+}
+
+.spotlight__video {
+    height: 500px;
+    width: 800px;
+    position: absolute;
+    right: 110px;
+    top: 250px;
+    z-index: -1;
+    iframe {
+        position:absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+    }
 }
 
 .spotlight__box {
@@ -118,6 +134,10 @@
 
 @media screen and (min-width: $desktop){
     .spotlight__image {
+        height: 576px;
+        width: 1024px;
+    }
+    .spotlight__video {
         height: 576px;
         width: 1024px;
     }
