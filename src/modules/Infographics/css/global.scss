@@ -32,6 +32,9 @@
         font-size: 22px;
         font-family: $base-font-family;
         font-weight: 800;
+        &:hover {
+            background-color: $red-dark;
+        }
     }
     &__list {
         display: block;
@@ -72,7 +75,7 @@
             background: repeating-linear-gradient(-45deg, $white, $white 2px, transparent 2px, transparent 8px);
             position: absolute;
             left: 100px;
-            bottom: 100px;
+            bottom: -1200px;
             display: none;
         }
         &--white2 {
@@ -81,7 +84,7 @@
             background: repeating-linear-gradient(-45deg, $white, $white 2px, transparent 2px, transparent 8px);
             position: absolute;
             right: 100px;
-            bottom: -120px;
+            bottom: -1400px;
             display: none;
         }
     }

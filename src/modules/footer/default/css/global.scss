@@ -34,6 +34,9 @@
         font-family: $base-font-family;
         margin-bottom: 50px;
         font-weight: 800;
+        &:hover {
+            background-color: $red-dark;
+        }
     }
     &__links {
         background-color: $grey-medium;
