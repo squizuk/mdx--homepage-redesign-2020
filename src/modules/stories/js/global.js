@@ -23,3 +23,6 @@ function slick_on_mobile(slider, settings){
     }
   });
 };
+
+
+$('.stories__box--first').smoove();
