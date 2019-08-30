@@ -129,19 +129,19 @@
         &--white1 {
             height: 228px;
             width: 232px;
-            background: repeating-linear-gradient(-45deg, $black, $black 2px, transparent 2px, transparent 8px);
+            background: repeating-linear-gradient(-45deg, $white, $white 2px, transparent 2px, transparent 8px);
             position: absolute;
             left: -60px;
-            bottom: -1900px;
+            bottom: -1300px;
             display: none;
         }
         &--white2 {
             height: 228px;
             width: 232px;
-            background: repeating-linear-gradient(-45deg, $black, $black 2px, transparent 2px, transparent 8px);
+            background: repeating-linear-gradient(-45deg, $white, $white 2px, transparent 2px, transparent 8px);
             position: absolute;
             right: -50px;
-            bottom: -1620px;
+            bottom: -1020px;
             display: none;
         }
     }
