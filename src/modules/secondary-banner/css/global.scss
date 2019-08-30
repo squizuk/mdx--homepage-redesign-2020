@@ -1,65 +1,116 @@
 .secondary-banner {
-    padding: 50px;
-}
-
-.secondary-banner__wrapper {
-    margin: 0 auto;
-    max-width: 1640px;
     position: relative;
+    padding-top: 1px;
+    margin-bottom: 20px;
+    &__wrapper {
+        margin: 0 auto;
+        max-width: 1640px;
+        height: 480px;
+        position: absolute;
+        z-index: -1;
+    }
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__video {
+        height: 100%;
+        width: 100%;
+        iframe {
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;            
+            height:100%;
+        }
+    }
+    &__box {
+        background-color: rgba(0, 0, 0, 0.88);
+        padding: 35px;
+        text-align: center;
+        margin: 0 10px;
+        margin-top: 420px;
+        &-title {
+            color: $white;
+            font-family: $base-font-family;
+            font-size: 32px;
+            margin: 0;
+            padding: 0;
+            font-weight: 600;
+        }
+        &-subtitle {
+            color: $white;
+            font-family: $alt-font-family;
+            font-size: 22px;
+            margin: 0;
+            padding: 0;
+            max-width: 600px;
+            font-weight: 400;
+        }
+        &-text {
+            margin-bottom: 50px;
+        }
+    }
+    &__cta {
+        color: $white;
+        background-color: $red;
+        text-decoration: none;
+        padding: 18px 70px;
+        font-size: 22px;
+        font-family: $base-font-family;
+        margin-bottom: 30px;
+        font-weight: 800;
+        &:hover {
+            background-color: $red-dark;
+        }
+    }
+    &__pattern--white {
+        height: 200px;
+        width: 204px;
+        background: repeating-linear-gradient(-45deg, $white, $white 2px, transparent 2px, transparent 8px);
+        position: absolute;
+        display: none;
+    }
 }
 
-.secondary-banner__image {
-    object-fit: cover;
+@media screen and (min-width: $tablet){
+    .secondary-banner {
+        padding: 50px;
+        margin-bottom: 0;
+        &__wrapper {
+            height: 690px;
+            position: unset;
+            z-index: unset;
+        }
+        &__box {
+            position: absolute;
+            bottom: 70px;
+            left: 70px;
+            z-index: 10000;
+            text-align: left;
+            margin: 0;
+        }
+        &__pattern--white {
+            display: block;
+            left: 670px;
+            bottom: -430px;
+        }
+        &__box-title {
+            font-size: 48px;
+        }
+        &__box-subtitle {
+            font-size: 28px;
+        }
+    }
 }
 
-.secondary-banner__box {
-    position: absolute;
-    bottom: 30px;
-    left: 20px;
-    background-color: rgba(0, 0, 0, 0.88);
-    padding: 35px;
-    z-index: 10000;
-}
-
-.secondary-banner__box-title {
-    color: white;
-    font-family: Dax;
-    font-size: 48px;
-    margin: 0;
-    padding: 0;
-    font-weight: 600;
-}
-
-.secondary-banner__box-subtitle {
-    color: white;
-    font-family: Arial;
-    font-size: 28px;
-    margin: 0;
-    padding: 0;
-    max-width: 600px;
-    font-weight: 400;
-}
-
-.secondary-banner__cta {
-    color: white;
-    background-color: #D52B1E;
-    text-decoration: none;
-    padding: 18px 70px;
-    font-size: 22px;
-    font-family: Dax;
-    margin-bottom: 30px;
-    font-weight: 800;
-}
-
-.secondary-banner__box-text {
-    margin-bottom: 50px;
-}
-
-.secondary-banner__pattern--white {
-    height: 200px;
-    width: 204px;
-    background: repeating-linear-gradient(-45deg, #ffffff, #ffffff 2px, transparent 2px, transparent 8px);
-    position: absolute;
-    left: 570px;
-    bottom: 180px;
+@media screen and (min-width: $desktop){
+    .secondary-banner__box {
+        left: 160px;
+    }
+    .secondary-banner__pattern--white {
+        left: 670px;
+        bottom: -830px;
+    }
 }
