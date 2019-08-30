@@ -1,0 +1,1 @@
+$('.secondary-banner__wrapper').smoove();
