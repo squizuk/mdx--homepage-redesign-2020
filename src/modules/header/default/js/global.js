@@ -21,3 +21,14 @@ $(window).on('load resize', function () {
     $('#menu').slinky(options);
   }
 });
+
+
+var menuButton = document.querySelector('.top-bar__hamburger');
+var menuList = document.querySelector('.top-bar__left-part');
+var menuButtonIcon = document.querySelector('.fa.fa-bars.hamburger-icon');
+
+menuButton.addEventListener('click', function() {
+  menuList.classList.toggle('active');
+  menuButtonIcon.classList.toggle('fa-bars');
+  menuButtonIcon.classList.toggle('fa-times');
+}, false);

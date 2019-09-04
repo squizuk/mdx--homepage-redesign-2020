@@ -52,29 +52,27 @@
     .slinky-theme-default a:not(.back) {
         color: $white;
         padding: 1em;
-        padding-right: 70px;
         font-size: 22px;
         font-family: $alt-font-family;
         text-decoration: none;
     }
     .slinky-theme-default a:not(.back):hover {
-        background: rgba(90, 200, 250, 0.25);
+        background: $black;
     }
     .slinky-theme-default a:not(.back):active {
-        background: rgba(90, 200, 250, 0.5);
+        background: $black;
     }
     .slinky-theme-default .next::after,
     .slinky-theme-default .back::before {
-        background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+ICAgIDxwYXRoIGQ9Ik0xMi4yMTkgMi4yODFMMTAuNzggMy43MiAxOC4wNjIgMTFIMnYyaDE2LjA2M2wtNy4yODIgNy4yODEgMS40MzggMS40MzggOS05IC42ODctLjcxOS0uNjg3LS43MTl6IiAvPjwvc3ZnPg==) center no-repeat;
-        background-size: 1em;
+        background: url('./files/arrow-right.svg') center no-repeat;
         content: '';
         height: 1em;
-        opacity: 0.25;
+        opacity: 0.55;
         transition: 200ms;
         width: 1em;
     }
     .slinky-theme-default .next::after {
-        margin-left: 1em;
+        // margin-left: 1em;
     }
     .slinky-theme-default .back::before {
         padding: 1em;
@@ -93,6 +91,11 @@
         font-size: 28px;
         margin-left: 40px;
     }
+    .close-icon {
+        color: $white;
+        font-size: 28px;
+        margin-left: 40px;
+    }
     .top-bar__right-navigation {
         display: none;
     }
@@ -101,9 +104,13 @@
         right: 30px;
     }
     .top-bar__left-part {
+        visibility: hidden;
         position: absolute;
         top: 100px;
         right: 0;
+        &.active {
+            visibility: visible;
+        }
     }
     .top-bar {
         background-color: $black;
@@ -113,6 +120,9 @@
     }
     .logo-mobile {
         padding: 20px 0;
+    }
+    .fa-chevron-right {
+        display: none;
     }
 }
 
@@ -172,6 +182,9 @@
     }
 
     .hamburger-icon {
+        display: none;
+    }
+    .close-icon {
         display: none;
     }
 
@@ -267,7 +280,6 @@
                 display: block;
                 position: static;
                 &:hover {
-                    // background-color: blue;
                     > .header-menu__link {
                         border-bottom: none;
                     }
@@ -284,7 +296,6 @@
         &__sub {
             top: 100%;
             left: 0;
-            // padding: 10px;
             background-color: rgba(0,0,0,0.7);
         }
 
