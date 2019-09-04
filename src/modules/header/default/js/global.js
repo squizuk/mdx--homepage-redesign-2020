@@ -17,7 +17,7 @@ var options = {
 }
 
 $(window).on('load resize', function () {
-  if ($(window).width() < 768) {
+  if ($(window).width() < 1230) {
     $('#menu').slinky(options);
   }
 });
