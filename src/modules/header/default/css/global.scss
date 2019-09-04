@@ -40,18 +40,22 @@
         order: 1;
     }
     .slinky-theme-default {
-        background: #f6f7f8;
+        background: rgba(0, 0, 0, 0.8);
     }
     .slinky-theme-default .title {
-        color: #333;
+        color: $white;
         padding: 1em;
     }
     .slinky-theme-default li {
         line-height: 1;
     }
     .slinky-theme-default a:not(.back) {
-        color: #333;
+        color: $white;
         padding: 1em;
+        padding-right: 70px;
+        font-size: 22px;
+        font-family: $alt-font-family;
+        text-decoration: none;
     }
     .slinky-theme-default a:not(.back):hover {
         background: rgba(90, 200, 250, 0.25);
@@ -98,8 +102,17 @@
     }
     .top-bar__left-part {
         position: absolute;
-        top: 74px;
+        top: 100px;
         right: 0;
+    }
+    .top-bar {
+        background-color: $black;
+    }
+    .logo-desktop {
+        display: none;
+    }
+    .logo-mobile {
+        padding: 20px 0;
     }
 }
 
@@ -109,7 +122,6 @@
     left: 0;
     right: 0;
     z-index: 9;
-    background-color: rgba(0, 0, 0, 0.8);;
 }
 
 .top-bar__container {
@@ -148,6 +160,12 @@
 
 
 @media screen and (min-width: 1230px) {
+    .logo-mobile {
+        display: none;
+    }
+    .top-bar {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
     .top-bar__left-part {
         position: unset;
         margin-top: 0;
