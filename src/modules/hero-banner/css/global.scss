@@ -7,22 +7,21 @@
     overflow: hidden;
     width: 100%;
     padding-bottom: 360px;
+    &__box {
+        position: absolute;
+        bottom: 20px;
+        background-color: rgba(0, 0, 0, 0.88);
+        padding: 40px;
+        z-index: 1;
+        width: 100%;
+    }
+    &__image {
+        max-width: 100%;
+        min-height: 400px;
+        object-fit: cover;
+    }
 }
 
-.hero-banner__box {
-    position: absolute;
-    bottom: 20px;
-    background-color: rgba(0, 0, 0, 0.88);
-    padding: 40px;
-    z-index: 1;
-    width: 100%;
-}
-
-.hero-banner__image {
-    max-width: 100%;
-    min-height: 400px;
-    object-fit: cover;
-}
 
 .hero-banner__box-title {
     text-align: center;
@@ -120,6 +119,7 @@
     width: 40px;
     height: 40px;
     z-index: 1;
+    cursor: pointer;
     background-image: url('./files/glass.svg');
     border: none;
 }
@@ -133,10 +133,27 @@
     padding-left: 20px;
 }
 
+.twitter-typeahead {
+    width: 100%;
+}
 
+.twitter-typeahead .tt-menu {
+    background-color: white;
+    margin-top: 5px;
+    font-family: Arial;
+    font-size: 16px;
+    width: 100%;
+}
 
-
-
+.twitter-typeahead .tt-suggestion {
+    padding: 10px 20px;
+    color: $black;
+    cursor: pointer;
+    &:hover {
+        background-color: $red;
+        color: $white;
+    }
+}
 
 @media screen and (min-width: $tablet){
     .hero-banner__cta--second {
