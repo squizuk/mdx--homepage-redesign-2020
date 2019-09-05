@@ -75,3 +75,15 @@
     padding-bottom: 40px;
     border-bottom: 1px solid $white;
 }
+
+.search__suggestion-header {
+    font-family: Dax;
+    font-size: 32px;
+    color: $white;
+    margin-left: 18px;
+    margin-bottom: 0;
+}
+
+.search__suggestion-component {
+    width: 50%;
+}
