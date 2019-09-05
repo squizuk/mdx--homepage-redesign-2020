@@ -55,17 +55,6 @@
     height: 100%;
 }
 
-.hero-banner__search-btn {
-    position: absolute;
-    right: 8px;
-    top: 4px;
-    z-index: 1;
-    border: none;
-    width: 30px;
-    height: 30px;
-    background: url()center center no-repeat;
-}
-
 .hero-banner__pattern--white {
     display: none;
     height: 200px;
@@ -97,11 +86,10 @@
     color: $white;
     background-color: $red;
     text-decoration: none;
-    padding: 18px 70px;
+    padding: 18px 25px;
     font-size: 22px;
     font-family: $base-font-family;
     font-weight: 800;
-    margin-right: 15px;
     margin-bottom: 20px;
     &:hover {
         background-color: $red-dark;
@@ -112,7 +100,7 @@
     color: $white;
     background-color: $black;
     text-decoration: none;
-    padding: 18px 70px;
+    padding: 18px 40px;
     font-size: 22px;
     font-family: $base-font-family;
     font-weight: 800;
@@ -121,7 +109,42 @@
     }
 }
 
+.hero-banner__search-input {
+    position: relative;
+}
+
+.hero-banner__search-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+    background-image: url('./files/glass.svg');
+    border: none;
+}
+
+.hero-banner__search-wrapper input[type="text"] {
+    height: 60px;
+    width: 100%;
+    font-family: Arial;
+    font-size: 22px;
+    color: #AFAFAF;
+    padding-left: 20px;
+}
+
+
+
+
+
+
 @media screen and (min-width: $tablet){
+    .hero-banner__cta--second {
+        padding: 18px 70px;
+    }
+    .hero-banner__cta--first {
+        padding: 18px 70px;
+    }
     .hero-banner__search-wrapper {
         width: 620px;
         margin: 0 auto;
