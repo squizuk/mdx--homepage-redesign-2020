@@ -27,8 +27,29 @@ var menuButton = document.querySelector('.top-bar__hamburger');
 var menuList = document.querySelector('.top-bar__left-part');
 var menuButtonIcon = document.querySelector('.fa.fa-bars.hamburger-icon');
 
-menuButton.addEventListener('click', function() {
+menuButton.addEventListener('click', function () {
   menuList.classList.toggle('active');
   menuButtonIcon.classList.toggle('fa-bars');
   menuButtonIcon.classList.toggle('fa-times');
 }, false);
+
+
+
+
+// Show/Hide Search Screen
+
+var searchButton = document.querySelector('.top-bar__search');
+var searchScreen = document.querySelector('.search-screen');
+var pageWrapper = document.querySelector('.page-wrapper');
+var closeButton = document.querySelector('.search-screen__top-close');
+
+searchButton.addEventListener('click', function () {
+  searchScreen.classList.add('active');
+  pageWrapper.classList.add('blurred');
+});
+
+closeButton.addEventListener('click', function () {
+  searchScreen.classList.remove('active');
+  pageWrapper.classList.remove('blurred');
+})
+
