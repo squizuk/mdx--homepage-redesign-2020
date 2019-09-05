@@ -55,3 +55,23 @@
     background-color: transparent;
     border: none;
 }
+
+.search-screen__content .twitter-typeahead .tt-menu {
+    background-color: transparent;
+    margin-top: 5px;
+    font-family: Arial;
+    font-size: 22px;
+    width: 100%;
+}
+
+.search-screen__content .twitter-typeahead .tt-suggestion {
+    color: $white;
+    &:hover {
+        background-color: $black;
+    }
+}
+
+.search-screen__content .twitter-typeahead .tt-dataset.tt-dataset-mdxGlobal {
+    padding-bottom: 40px;
+    border-bottom: 1px solid $white;
+}
