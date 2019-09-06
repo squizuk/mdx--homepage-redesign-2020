@@ -1,3 +1,8 @@
+var searchWrapper = document.querySelector('.search-screen');
+$(document).ready(function() {
+    $(searchWrapper).css('height', $(document).height() + 'px');
+});
+
 var mdxGlobal = new Bloodhound({
     datumTokenizer: Bloodhound.tokenizers.whitespace,
     queryTokenizer: Bloodhound.tokenizers.whitespace,
