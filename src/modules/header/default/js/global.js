@@ -45,7 +45,7 @@ var closeButton = document.querySelector('.search-screen__top-close');
 
 searchButton.addEventListener('click', function () {
   searchScreen.classList.add('active');
-  // pageWrapper.classList.add('blurred');
+  pageWrapper.classList.add('blurred');
 });
 
 closeButton.addEventListener('click', function () {
