@@ -71,9 +71,6 @@
         transition: 200ms;
         width: 1em;
     }
-    .slinky-theme-default .next::after {
-        // margin-left: 1em;
-    }
     .slinky-theme-default .back::before {
         padding: 1em;
         transform: scaleX(-1);
@@ -177,7 +174,7 @@
         background-color: rgba(0, 0, 0, 0.8);
     }
     .top-bar__left-part {
-        position: unset;
+        position: static;
         margin-top: 0;
     }
 
@@ -199,18 +196,18 @@
     }
 
     .right-navigation__link {
-        color: white;
+        color: $white;
         font-size: 16px;
         text-decoration: none;
     }
 
     .left-navigation__link {
-        color: white;
+        color: $white;
         font-size: 28px;
         text-decoration: none;
         padding-bottom: 7px;
         &:hover {
-            border-bottom: 5px solid #D52B1E;
+            border-bottom: 5px solid $red;
         }
     }
 
@@ -237,10 +234,8 @@
             position: relative;
             padding: 0.5rem;
             padding-top: 10px;
-            // @include sq-transition(background-color .3s ease-in-out);
 
             &:hover, &.focusin {
-                // background-color: rgba(0,54,95,0.7);
                 > .header-menu__sub, > .header-menu__third {
                     visibility: visible;
                     opacity: 1;
@@ -250,13 +245,13 @@
 
                 .header-menu__link {
                     padding-bottom: 5px;
-                    border-bottom: 5px solid #D52B1E;
+                    border-bottom: 5px solid $red;
                 }
             }
         }
 
         &__link {
-            color: white;
+            color: $white;
             font-size: 18px;
             text-decoration: none;
             font-weight: 600;
@@ -274,7 +269,7 @@
             z-index: -1;
 
             .header-menu__item {
-                height: unset;
+                height: auto;
                 padding-top: 0;
                 padding: pxToRem(10) pxToRem(20);
                 display: block;
@@ -289,7 +284,7 @@
             .header-menu__link {
                 display: block;
                 font-size: 22px;
-                font-family: Arial;
+                font-family: $alt-font-family;
             }
         }
 
@@ -310,9 +305,9 @@
     .header-menu__link__sub {
         display: block;
         font-size: 18px;
-        font-family: Arial;
+        font-family: $alt-font-family;
         text-decoration: none;
-        color: white;
+        color: $white;
         padding-left: 10px;
         padding-right: 10px;
         &:hover {
@@ -323,9 +318,9 @@
     .header-menu__link__sub-title {
         display: block;
         font-size: 28px;
-        font-family: Dax;
+        font-family: $base-font-family;
         text-decoration: none;
-        color: white;
+        color: $white;
     }
 
     .fa-chevron-right {
