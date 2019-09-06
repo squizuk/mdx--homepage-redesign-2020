@@ -80,8 +80,7 @@
         margin-bottom: 0;
         &__wrapper {
             height: 690px;
-            position: unset;
-            z-index: unset;
+            position: static;
         }
         &__box {
             position: absolute;
@@ -94,7 +93,7 @@
         &__pattern--white {
             display: block;
             left: 670px;
-            bottom: -430px;
+            bottom: -830px;
         }
         &__box-title {
             font-size: 48px;

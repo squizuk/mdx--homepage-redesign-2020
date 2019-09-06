@@ -109,6 +109,7 @@
         cursor: pointer;
         background-image: url('./files/glass.svg');
         border: none;
+        background-color: transparent;
     }
     &__search-wrapper input[type="text"] {
         height: 60px;

@@ -48,20 +48,26 @@ General
     font-family: "Dax";
     font-style: normal;
     font-weight: 400;
-    src: url("../fonts/DaxLight.ttf") format("truetype");
+    src: 
+        url("../fonts/Dax-Light.eot") format('embedded-opentype'),
+        url("../fonts/DaxLight.ttf") format("truetype");
   }
   
   @font-face {
     font-family: "Dax";
     font-style: normal;
     font-weight: 600;
-    src: url("../fonts/DaxMedium.ttf") format("truetype");
+    src: 
+        url("../fonts/Dax-Medium.eot") format('embedded-opentype'),
+        url("../fonts/DaxMedium.ttf") format("truetype");
   }
   @font-face {
     font-family: "Dax";
     font-style: normal;
     font-weight: 800;
-    src: url("../fonts/Dax-Bold.ttf") format("truetype");
+    src: 
+        url("../fonts/Dax-Bold.eot") format('embedded-opentype'),
+        url("../fonts/Dax-Bold.ttf") format("truetype");
   }
 
 html,
