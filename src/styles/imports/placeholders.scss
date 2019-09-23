@@ -44,9 +44,11 @@
     border: 0;
     overflow: hidden;
     // No rgba fallback (Modernizr class)
-    .no-rgba & { text-indent: 9999em; }
+    .no-rgba & {
+        text-indent: 9999em;
+    }
     &:before {
-        content: "";
+        content: '';
         display: block;
         width: 0;
         height: 150%;

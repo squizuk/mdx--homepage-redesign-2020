@@ -1,0 +1,125 @@
+$animation-slideup-transformY: pxToRem(200);
+$animation-slidedown-transformY: pxToRem(-200);
+
+.animation {
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    &--slide-down {
+        animation-name: animationSlideDown;
+    }
+
+    &--slide-up {
+        animation-name: animationSlideUp;
+    }
+
+    &--time {
+        &-short {
+            animation-duration: 0.8s;
+        }
+
+        &-medium {
+            animation-duration: 1.5s;
+        }
+
+        &-long {
+            animation-duration: 2.5s;
+        }
+    }
+}
+
+[data-animate='slide-up'] {
+    opacity: 0;
+    transform: translateY($animation-slideup-transformY);
+}
+
+[data-animate='slide-down'] {
+    opacity: 0;
+    transform: translateY($animation-slidedown-transformY);
+}
+
+@keyframes animationSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY($animation-slideup-transformY);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes animationSlideDown {
+    0% {
+        opacity: 0;
+        transform: translateY($animation-slidedown-transformY);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottomDesktop {
+    0% {
+        opacity: 0;
+        transform: translateY(#{pxToRem(50)});
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromBottomMobile {
+    0% {
+        opacity: 0;
+        transform: translateY(#{pxToRem(50)});
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(#{pxToRem(-40)});
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(#{pxToRem(-50)});
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(#{pxToRem(-16)});
+    }
+    60% {
+        transform: translateY(#{pxToRem(-8)});
+    }
+}

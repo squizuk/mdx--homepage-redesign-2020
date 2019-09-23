@@ -1,0 +1,206 @@
+.spotlight {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 50%,
+        $bg-grey 50%
+    );
+    margin-bottom: $section-margin-mobile;
+
+    .section-subheading {
+        margin-bottom: pxToRem(40);
+    }
+
+    &__wrapper {
+        margin: 0 auto;
+        max-width: pxToRem(1440);
+        text-align: center;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__image {
+        height: pxToRem(500);
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    &__video {
+        height: pxToRem(500);
+        width: pxToRem(800);
+        position: absolute;
+        right: pxToRem(110);
+        top: pxToRem(230);
+        z-index: -1;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__box {
+        background-color: rgba(51, 51, 51, 0.9);
+        padding: pxToRem(30);
+        max-width: pxToRem(536);
+        text-align: left;
+        margin: 0 pxToRem(10);
+        margin-top: pxToRem(450);
+
+        &-text {
+            margin: 0;
+            padding: 0;
+            color: $white;
+            font-family: $alt-font-family;
+            font-size: $font-l;
+            margin-bottom: pxToRem(30);
+            line-height: 1.7;
+        }
+
+        &-link {
+            text-decoration: none;
+            color: $white;
+            font-family: $base-font-family;
+            font-size: $font-s;
+            font-weight: 500;
+            display: block;
+
+            & + & {
+                margin-top: pxToRem(20);
+            }
+
+            &:hover {
+                .spotlight__box-link__arrow {
+                    transform: translateX(#{pxToRem(15)});
+                }
+            }
+
+            &__arrow {
+                float: right;
+                padding-top: pxToRem(5);
+                transition: 0.5s all;
+            }
+        }
+    }
+
+    &__pattern {
+        &--grey {
+            position: absolute;
+            left: pxToRem(100);
+            bottom: pxToRem(-200);
+            z-index: -3;
+            display: none;
+
+            &::after {
+                content: '';
+                height: pxToRem(398);
+                width: pxToRem(402);
+                background-color: $grey-light;
+                transform: rotate(-5deg);
+                display: block;
+            }
+        }
+
+        &--white {
+            height: pxToRem(388);
+            width: pxToRem(392);
+            background: repeating-linear-gradient(
+                -45deg,
+                $white,
+                $white 2px,
+                transparent 2px,
+                transparent 8px
+            );
+            position: absolute;
+            left: pxToRem(190);
+            bottom: pxToRem(-350);
+            z-index: -2;
+            display: none;
+        }
+
+        &--black {
+            position: absolute;
+            right: pxToRem(280);
+            top: pxToRem(300);
+            z-index: -2;
+            display: none;
+
+            &::after {
+                content: '';
+                height: pxToRem(200);
+                width: pxToRem(350);
+                background-color: rgba(0, 0, 0, 0.9);
+                transform: rotate(-5deg);
+                display: block;
+            }
+        }
+
+        &--red {
+            position: absolute;
+            right: pxToRem(-50);
+            top: pxToRem(120);
+            z-index: -3;
+            display: none;
+
+            &::after {
+                content: '';
+                height: pxToRem(398);
+                width: pxToRem(402);
+                background-color: $red;
+                transform: rotate(5deg);
+                display: block;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .spotlight {
+        margin-bottom: $section-margin-desktop;
+        padding-bottom: pxToRem(120);
+        overflow: hidden;
+        padding: 0 pxToRem(40);
+        .section-subheading {
+            margin-bottom: pxToRem(80);
+        }
+
+        &__pattern--grey,
+        &__pattern--black,
+        &__pattern--red,
+        &__pattern--white {
+            display: block;
+        }
+
+        &__wrapper {
+            height: pxToRem(780);
+        }
+
+        &__image {
+            width: pxToRem(800);
+            right: 0;
+            top: pxToRem(230);
+        }
+
+        &__box {
+            margin: 0;
+            padding: pxToRem(40);
+        }
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .spotlight {
+        &__image {
+            height: pxToRem(576);
+            width: pxToRem(1024);
+        }
+
+        &__video {
+            height: pxToRem(576);
+            width: pxToRem(1024);
+        }
+    }
+}

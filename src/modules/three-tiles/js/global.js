@@ -1,1 +1,0 @@
-$('.three-tiles__box').smoove();

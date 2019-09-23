@@ -43,7 +43,10 @@
     "last 2 versions"
   ],
   "dependencies": {
+    "debounce": "^1.2.0",
     "jquery-slinky": "^4.2.1",
+    "jspolyfill-array.prototype.findIndex": "^0.1.0",
+    "objectFitPolyfill": "^2.3.0",
     "webpack-merge": "^4.1.4"
   }
 }

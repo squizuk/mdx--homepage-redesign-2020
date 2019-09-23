@@ -1,0 +1,34 @@
+.btn {
+    text-decoration: none;
+    padding: pxToRem(16) pxToRem(70);
+    font-size: $font-l;
+    font-family: $base-font-family;
+    font-weight: 800;
+    transition: 0.5s background-color;
+    color: $white;
+    display: inline-block;
+
+    &--red {
+        background-color: $red;
+
+        &:hover {
+            background-color: $red-dark;
+        }
+    }
+
+    &--black {
+        background-color: $black;
+
+        &:hover {
+            background-color: $grey-dark;
+        }
+    }
+
+    @media (max-width: $tablet) {
+        padding: pxToRem(23) pxToRem(30);
+        width: pxToRem(300);
+        max-width: 100%;
+        display: inline-block;
+        text-align: center;
+    }
+}

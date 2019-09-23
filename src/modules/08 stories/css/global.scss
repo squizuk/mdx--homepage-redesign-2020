@@ -1,0 +1,259 @@
+.stories {
+    background-color: $white;
+    padding: 0 pxToRem(10);
+    margin-bottom: $section-margin-mobile;
+    overflow: hidden;
+    text-align: center;
+
+    .object-fit-polyfill {
+        width: 100%;
+    }
+
+    .section-heading,
+    .section-subheading {
+        z-index: 1;
+        position: relative;
+    }
+
+    .slick-dots {
+        margin-top: pxToRem(10);
+        padding: 1rem 0;
+
+        button {
+            border: 2px solid $red;
+        }
+
+        li.slick-active button {
+            background-color: $red;
+            box-shadow: inset 0 0 0 3px $white;
+        }
+    }
+
+    &__boxes {
+        display: block;
+        margin: pxToRem(60) 0 pxToRem(30);
+        text-align: left;
+        position: relative;
+        perspective: none !important;
+    }
+
+    &__boxes-wrapper {
+        position: relative;
+    }
+
+    &__box--first {
+        display: flex;
+        align-items: flex-end;
+        background-position: center top;
+        text-decoration: none;
+        position: relative;
+
+        &:hover {
+            .stories__box--arrow {
+                transform: translateX(#{pxToRem(15)});
+            }
+        }
+
+        &__image {
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+
+            @media (min-width: $tablet) {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+            }
+        }
+
+        &__wrapper {
+            z-index: 1;
+            background-color: rgba($grey-dark, 0.9);
+            width: 100%;
+            position: relative;
+
+            @media (min-width: $tablet) {
+                background-color: $grey-dark;
+            }
+        }
+
+        &__pattern--white {
+            height: pxToRem(228);
+            width: pxToRem(232);
+            background: repeating-linear-gradient(
+                45deg,
+                $white,
+                $white 2px,
+                transparent 2px,
+                transparent 8px
+            );
+            position: absolute;
+            left: calc(100% - #{pxToRem(20)});
+            top: pxToRem(350);
+            transform: translateY(-50%);
+            z-index: 2;
+        }
+
+        &__pattern--red {
+            position: absolute;
+            left: calc(100% - #{pxToRem(30)});
+            top: pxToRem(500);
+            transform: translateY(-50%);
+
+            &::after {
+                content: '';
+                height: pxToRem(350);
+                width: pxToRem(350);
+                background-color: $red;
+                transform: rotate(10deg);
+                display: block;
+
+                @media (min-width: $desktop) {
+                    height: pxToRem(478);
+                    width: pxToRem(482);
+                }
+            }
+
+            @media (min-width: $tablet) {
+                left: 47%;
+                transform: translateY(0);
+            }
+        }
+    }
+
+    &__box--second {
+        display: block;
+        min-height: pxToRem(290);
+        background-color: rgba($grey-dark, 0.9);
+        text-decoration: none;
+        position: relative;
+
+        &:hover {
+            .stories__box--arrow {
+                transform: translateX(#{pxToRem(15)});
+            }
+        }
+
+        &__title {
+            color: $white;
+            font-family: $base-font-family;
+            font-size: $font-l;
+            margin: 0;
+            padding: pxToRem(20) pxToRem(60) pxToRem(10) pxToRem(30);
+            margin-bottom: pxToRem(15);
+            font-weight: 600;
+            word-break: break-word;
+        }
+
+        &__subtitle {
+            color: $white;
+            font-family: $alt-font-family;
+            font-size: $font-s;
+            margin: 0;
+            padding: 0 pxToRem(30) pxToRem(20) pxToRem(30);
+        }
+
+        @media (min-width: $tablet) {
+            background-color: $grey-dark;
+        }
+    }
+
+    &__box--third {
+        display: block;
+        min-height: pxToRem(360);
+        background-color: rgba($grey-dark, 0.9);
+        text-decoration: none;
+        position: relative;
+
+        &:hover {
+            .stories__box--arrow {
+                transform: translateX(#{pxToRem(15)});
+            }
+        }
+
+        @media (min-width: $tablet) {
+            background-color: $grey-dark;
+        }
+    }
+    &__box--arrow {
+        position: absolute;
+        top: pxToRem(35);
+        right: pxToRem(35);
+        color: $white;
+        font-size: $font-s;
+        transition: 0.5s all;
+
+        @at-root {
+            .stories__box--first & {
+                right: pxToRem(35);
+            }
+        }
+
+        @media (min-width: $tablet) {
+            right: pxToRem(15);
+        }
+
+        @media (min-width: $desktop) {
+            top: pxToRem(35);
+            right: pxToRem(35);
+        }
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .stories {
+        padding: 0;
+        margin-bottom: $section-margin-desktop;
+        padding: 0 pxToRem(40);
+        &__boxes {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        &__box--first {
+            width: 49%;
+            height: pxToRem(700);
+            padding-bottom: 0;
+            background-position: center;
+
+            &__wrapper {
+                margin-top: 0;
+            }
+        }
+
+        &__box--second {
+            z-index: 8;
+            width: 24%;
+        }
+
+        &__box--third {
+            z-index: 8;
+            width: 24%;
+        }
+
+        &__box--first__pattern--white {
+            display: block;
+            left: calc(50% - #{pxToRem(30)});
+            bottom: pxToRem(-150);
+            top: auto;
+        }
+
+        &__box--first__pattern--red {
+            display: block;
+            top: auto;
+            bottom: pxToRem(-200);
+        }
+
+        &__box--second__title {
+            font-size: $font-l;
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    .stories__box--second__title {
+        font-size: $font-xl;
+    }
+}

@@ -1,0 +1,127 @@
+.footer {
+    &__socials {
+        background-color: rgba(209, 209, 209, 0.45);
+        padding: pxToRem(60) 0;
+
+        &-wrapper {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            max-width: pxToRem(850);
+            align-items: center;
+            padding: 0 pxToRem(15);
+        }
+
+        &-title {
+            color: $black;
+            font-size: $font-l;
+            font-family: $base-font-family;
+            font-weight: 600;
+            flex-basis: 100%;
+            text-align: center;
+
+            @media (min-width: $tablet) {
+                padding-right: pxToRem(30);
+                text-align: left;
+                flex-basis: auto;
+            }
+        }
+    }
+
+    &__socials-links {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin-top: pxToRem(50);
+
+        .fa {
+            font-size: $font-xl;
+            color: $black;
+            padding-right: pxToRem(30);
+
+            @media (max-width: $tablet) {
+                padding-left: pxToRem(15);
+                padding-right: pxToRem(15);
+            }
+        }
+    }
+
+    &__links {
+        background-color: $grey-dark;
+        padding: pxToRem(70) 0;
+
+        &-wrapper {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            max-width: pxToRem(1220);
+            align-items: center;
+            text-align: center;
+            padding: 0 pxToRem(10);
+        }
+
+        &-column {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        &-item {
+            padding: pxToRem(15) 0;
+        }
+    }
+
+    &__link {
+        color: $white;
+        text-decoration: none;
+        font-family: $alt-font-family;
+        font-size: $font-s;
+    }
+
+    &__contact-item {
+        color: $white;
+        font-family: $alt-font-family;
+        font-size: $font-s;
+        padding: 0;
+        margin: 0;
+        padding-bottom: pxToRem(10);
+    }
+
+    &__contact-info {
+        padding-top: pxToRem(15);
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .footer {
+        &__socials-wrapper {
+            flex-direction: row;
+        }
+
+        &__socials-links {
+            margin-top: 0;
+        }
+
+        &__links-wrapper {
+            flex-direction: row;
+            text-align: left;
+            align-items: flex-start;
+        }
+
+        &__links-column {
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .footer {
+        &__link,
+        &__contact-item {
+            font-size: $font-s;
+        }
+    }
+}

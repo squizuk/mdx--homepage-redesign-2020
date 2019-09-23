@@ -1,0 +1,180 @@
+.three-tiles {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 50%,
+        $bg-grey 50%
+    );
+    padding: 0 pxToRem(10);
+    margin-bottom: $section-margin-mobile;
+    overflow: hidden;
+    text-align: center;
+
+    &__boxes {
+        display: flex;
+        justify-content: space-between;
+        margin: pxToRem(60) 0;
+        position: relative;
+        flex-wrap: wrap;
+    }
+
+    &__box {
+        width: 100%;
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+        margin-bottom: pxToRem(10);
+
+        a {
+            margin-bottom: pxToRem(6);
+        }
+
+        &-content {
+            display: block;
+            position: relative;
+            text-decoration: none;
+
+            &:hover {
+                cursor: pointer;
+                .three-tiles__box-link {
+                    background-color: $red-dark;
+                }
+            }
+        }
+
+        &-image {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            &::after {
+                content: '';
+                display: block;
+                padding-bottom: 100%;
+            }
+        }
+
+        &-link {
+            display: block;
+            // position: absolute;
+            bottom: 0;
+            background-color: $red;
+            color: $white;
+            font-family: $base-font-family;
+            font-size: $font-l;
+            padding: pxToRem(30);
+            width: 100%;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0;
+            transition: 0.5s all;
+
+            &--a,
+            &--b,
+            &--c {
+                background-color: $white;
+                color: $red;
+                font-family: $base-font-family;
+                font-size: $font-s;
+                padding: pxToRem(18);
+                width: 100%;
+                text-decoration: none;
+                display: block;
+                font-weight: 800;
+                transition: 0.5s all;
+
+                &:hover {
+                    background-color: $red-dark;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    &__pattern {
+        &--grey1 {
+            position: absolute;
+            left: pxToRem(-50);
+            bottom: pxToRem(-100);
+            display: none;
+
+            &::after {
+                content: '';
+                background-color: $grey-light;
+                height: pxToRem(297);
+                width: pxToRem(300);
+                transform: rotate(-5deg);
+                display: block;
+            }
+        }
+
+        &--grey2 {
+            position: absolute;
+            right: pxToRem(-55);
+            bottom: pxToRem(200);
+            display: none;
+
+            &::after {
+                content: '';
+                display: block;
+                height: pxToRem(200);
+                width: pxToRem(200);
+                transform: rotate(5deg);
+                background-color: $grey-light;
+            }
+        }
+
+        &--white1 {
+            height: pxToRem(228);
+            width: pxToRem(232);
+            background: repeating-linear-gradient(
+                -45deg,
+                $white,
+                $white 2px,
+                transparent 2px,
+                transparent 8px
+            );
+            position: absolute;
+            left: pxToRem(-60);
+            bottom: pxToRem(200);
+            display: none;
+        }
+
+        &--white2 {
+            height: pxToRem(228);
+            width: pxToRem(232);
+            background: repeating-linear-gradient(
+                -45deg,
+                $white,
+                $white 2px,
+                transparent 2px,
+                transparent 8px
+            );
+            position: absolute;
+            right: pxToRem(-100);
+            bottom: pxToRem(500);
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .three-tiles {
+        margin-bottom: $section-margin-desktop;
+        padding: 0 pxToRem(40);
+        &__box {
+            width: 32%;
+            margin-bottom: 0;
+        }
+
+        &__box-link {
+            padding: pxToRem(40);
+        }
+
+        &__pattern--grey1,
+        &__pattern--grey2,
+        &__pattern--white1,
+        &__pattern--white2 {
+            display: block;
+        }
+    }
+}

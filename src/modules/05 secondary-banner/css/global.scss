@@ -1,0 +1,130 @@
+.secondary-banner {
+    position: relative;
+    padding-top: 1px;
+    margin-bottom: $section-margin-mobile;
+    z-index: 2;
+    overflow: hidden;
+
+    &__wrapper {
+        margin: 0 auto;
+        max-width: pxToRem(1440);
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    &__image {
+        height: pxToRem(480);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__video {
+        width: 100%;
+        padding-bottom: 56.25%;
+        position: relative;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__box {
+        background-color: rgba($grey-dark, 0.88);
+        padding: pxToRem(30) pxToRem(40);
+        text-align: center;
+        margin: 0 pxToRem(10);
+
+        @at-root {
+            .secondary-banner--image & {
+                margin-top: pxToRem(380);
+            }
+
+            .secondary-banner--video & {
+                margin-top: 52%;
+            }
+        }
+
+        .section-subheading {
+            max-width: pxToRem(600);
+        }
+
+        &-text {
+            margin-bottom: pxToRem(30);
+        }
+    }
+
+    &__pattern--white {
+        height: pxToRem(200);
+        width: pxToRem(204);
+        z-index: 1;
+        background: repeating-linear-gradient(
+            -45deg,
+            $white,
+            $white 2px,
+            transparent 2px,
+            transparent 8px
+        );
+        position: absolute;
+        display: none;
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .secondary-banner {
+        margin-bottom: $section-margin-desktop;
+        padding: 0 pxToRem(40);
+        &__wrapper {
+            position: static;
+        }
+
+        &__image {
+            height: pxToRem(690);
+        }
+
+        &__box {
+            position: absolute;
+            bottom: pxToRem(70);
+            left: pxToRem(70);
+            z-index: 1;
+            text-align: left;
+            margin: 0;
+            background-color: rgba($black, 0.88);
+        }
+
+        &__pattern--white {
+            display: block;
+            left: 60%;
+            bottom: 0;
+        }
+    }
+}
+
+@media screen and (min-width: #{pxToRem(1000)}) {
+    .secondary-banner {
+        &__pattern--white {
+            left: pxToRem(570);
+        }
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .secondary-banner {
+        &__box {
+            left: pxToRem(160);
+        }
+
+        &__pattern--white {
+            left: pxToRem(670);
+            bottom: 0;
+        }
+    }
+}

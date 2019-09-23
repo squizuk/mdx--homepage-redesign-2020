@@ -50,7 +50,7 @@ img.pull-right {
 .video-container {
     position: relative;
     padding-bottom: 56.25%; // Video area
-    padding-top: 30px; // 30px controls container
+    padding-top: pxToRem(30); // 30px controls container
     height: 0;
     overflow: hidden;
     margin-bottom: 1em;

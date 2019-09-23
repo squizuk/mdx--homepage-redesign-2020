@@ -17,7 +17,7 @@ module.exports = merge(common, {
           "sass-loader",
           "import-glob-loader"
         ]
-      }
+      },
     ]
   },
   'plugins': [

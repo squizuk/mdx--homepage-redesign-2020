@@ -1,18 +1,20 @@
 // These imports have no CSS output, but provide variables, mixins and helpers to aid in construction of
 // a design cutup.
-@import "imports/variables.scss";
-@import "imports/functions.scss";
-@import "imports/mixins.scss";
-@import "imports/placeholders.scss";
+@import 'imports/variables.scss';
+@import 'imports/functions.scss';
+@import 'imports/mixins.scss';
+@import 'imports/placeholders.scss';
 
 // Box size all the things
 // https://squizmap.squiz.net/imp-bp/6400
 // http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
 // == Start box-sizing reset ==
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     -webkit-box-sizing: inherit;
-       -moz-box-sizing: inherit;
-            box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
 }
 html {
     @include sq-border-box;
@@ -25,7 +27,7 @@ Utilities
 --------------------
 */
 
-@import "imports/utilities.scss";
+@import 'imports/utilities.scss';
 
 /*
 --------------------
@@ -43,32 +45,6 @@ General
     background: $content-selection-highlight;
     text-shadow: none;
 }
-
-@font-face {
-    font-family: "Dax";
-    font-style: normal;
-    font-weight: 400;
-    src: 
-        url("../fonts/Dax-Light.eot") format('embedded-opentype'),
-        url("../fonts/DaxLight.ttf") format("truetype");
-  }
-  
-  @font-face {
-    font-family: "Dax";
-    font-style: normal;
-    font-weight: 600;
-    src: 
-        url("../fonts/Dax-Medium.eot") format('embedded-opentype'),
-        url("../fonts/DaxMedium.ttf") format("truetype");
-  }
-  @font-face {
-    font-family: "Dax";
-    font-style: normal;
-    font-weight: 800;
-    src: 
-        url("../fonts/Dax-Bold.eot") format('embedded-opentype'),
-        url("../fonts/Dax-Bold.ttf") format("truetype");
-  }
 
 html,
 body {
@@ -95,15 +71,21 @@ textarea {
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
+    border-radius: 0;
 }
-
-
 
 // IE10 Metro responsive
 // Required for Windows 8 Metro split-screen snapping with IE10
 // Source: http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/
-@-ms-viewport{
+@-ms-viewport {
     width: device-width;
+}
+
+// Removing phone styles for iOS
+a[href^='tel'] {
+    color: inherit; /* Inherit text color of parent element. */
+    text-decoration: none; /* Remove underline. */
+    /* Additional css `propery: value;` pairs here */
 }
 
 // Print style that shouldn't belong to print.scss to avoid the css beautifier from killing
@@ -112,20 +94,11 @@ textarea {
     margin: 0.5cm;
 }
 
-.page-wrapper.blurred {
-    filter: blur(40px);
-    -webkit-filter: blur(40px);
-    -moz-filter: blur(40px);
-    -o-filter: blur(40px);
-    -ms-filter: blur(40px);
-}
-
 /*
 --------------------
 Modules
 --------------------
 */
-@import "../modules/*/css/global.scss";
-@import "../modules/header/default/css/global.scss";
-@import "../modules/footer/default/css/global.scss";
-
+@import './imports/components/*';
+@import '../modules/*/css/global.scss';
+@import '../modules/10 footer/default/css/global.scss';

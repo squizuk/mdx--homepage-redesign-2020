@@ -5,11 +5,11 @@ const glob = require('glob');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 // Our function that generates our html plugins
-function generateHtmlPlugins (templateDir) {
+function generateHtmlPlugins(templateDir) {
   // Read files in /html directory
   const templateFiles = fs
     .readdirSync(path.resolve(__dirname, templateDir))
-    .filter(function(file){ //ignore folder
+    .filter(function (file) { //ignore folder
       return file.indexOf(".html") > -1
     });
 
@@ -29,7 +29,7 @@ function generateHtmlPlugins (templateDir) {
 const htmlPlugins = generateHtmlPlugins('./src/html');
 
 // File arrays
-let js_files = glob.sync('./src/modules/**/global.js') // Module JS
+let js_files = glob.sync('./src/modules/**/global.js', { "ignore": ['./src/modules/02 header/default/js/global.js, ./src/modules/11 search-screen/js/global.js'] }) // Module JS
 
 function reloadHtml() {
   const cache = {};
@@ -62,7 +62,8 @@ const copyWebPack = new CopyWebpackPlugin([
 
 module.exports = {
   'entry': {
-    'main': ['./src/index.js'].concat(js_files)
+    'main': ['./src/index.js'].concat(js_files),
+    'nav': ['./src/styles/nav.scss', './src/modules/02 header/default/js/global.js', './src/modules/11 search-screen/js/global.js']
   },
   'output': {
     'path': path.resolve(__dirname, 'dist'), // Output folder
@@ -105,12 +106,12 @@ module.exports = {
         }
       },
       { // Font files
-	'test': /\.(woff(2)?|ttf|eot|otf)(\?v=\d+\.\d+\.\d+)?$/,
+        'test': /\.(woff(2)?|ttf|eot|otf)(\?v=\d+\.\d+\.\d+)?$/,
         'use': [{
-            'loader': 'file-loader',
-            'options': {
-                'name': './mysource_files/[name].[ext]'
-            }
+          'loader': 'file-loader',
+          'options': {
+            'name': './mysource_files/[name].[ext]'
+          }
         }]
       }
     ]

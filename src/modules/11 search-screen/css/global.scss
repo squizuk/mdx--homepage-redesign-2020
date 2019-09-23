@@ -1,0 +1,195 @@
+.blurred {
+    overflow: hidden;
+
+    .page-wrapper {
+        filter: blur(#{pxToRem(40)});
+        -webkit-filter: blur(#{pxToRem(40)});
+        -moz-filter: blur(#{pxToRem(40)});
+        -o-filter: blur(#{pxToRem(40)});
+        -ms-filter: blur(#{pxToRem(40)});
+    }
+}
+
+.search-screen {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 0;
+    position: absolute;
+    display: none;
+
+    @at-root {
+        .blurred & {
+            overflow: scroll;
+        }
+    }
+
+    &.active {
+        display: block;
+    }
+
+    &__top {
+        padding: pxToRem(30) pxToRem(20);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-close {
+            margin-right: pxToRem(10);
+        }
+    }
+
+    &__content {
+        margin: 0 pxToRem(20);
+        height: pxToRem(60);
+    }
+
+    &__search-wrapper {
+        position: relative;
+
+        & input[type='text'] {
+            height: pxToRem(60);
+            width: 100%;
+            font-family: $alt-font-family;
+            font-size: $font-xxl;
+            color: $white;
+            background-color: transparent;
+            border: none;
+            border-bottom: 4px solid $white;
+
+            &.tt-hint {
+                color: #afafaf;
+            }
+            &::-ms-clear {
+                display: none;
+            }
+        }
+    }
+
+    &__search-btn {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: pxToRem(40);
+        height: pxToRem(40);
+        z-index: 1;
+        cursor: pointer;
+        background-image: url('./files/search-white.svg');
+        background-color: transparent;
+        border: none;
+    }
+
+    &__content .twitter-typeahead {
+        .tt-menu {
+            background-color: transparent;
+            margin-top: pxToRem(5);
+            font-family: $alt-font-family;
+            font-size: $font-l;
+            width: 100%;
+        }
+
+        .tt-suggestion {
+            color: #afafaf;
+            text-decoration: none;
+
+            strong {
+                color: $white;
+            }
+
+            &:hover {
+                background-color: $black;
+            }
+        }
+
+        .tt-dataset {
+            margin-bottom: pxToRem(20);
+        }
+
+        .tt-dataset + .tt-dataset {
+            border-top: 1px solid $white;
+            padding-top: pxToRem(20);
+            margin-bottom: 0;
+        }
+    }
+}
+
+.search__suggestion {
+    &-header {
+        font-family: $base-font-family;
+        font-size: $font-xl;
+        color: $white;
+        margin: 0;
+    }
+
+    &-component {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .search__suggestion-component {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    .search-screen {
+        &__top {
+            padding: pxToRem(25) pxToRem(30) 0;
+        }
+
+        &__content {
+            margin: 0 auto;
+            margin-top: pxToRem(100);
+            height: pxToRem(60);
+            width: pxToRem(1070);
+        }
+
+        &__search-wrapper {
+            & input[type='text'] {
+                font-size: $font-xxl;
+            }
+        }
+    }
+}
+
+.twitter-typeahead {
+    width: 100%;
+
+    .tt-menu {
+        background-color: $white;
+        color: $white;
+        margin-top: pxToRem(5);
+        font-family: $alt-font-family;
+        font-size: $font-xs;
+        width: 100%;
+    }
+
+    .tt-dataset {
+        padding: 0 pxToRem(20);
+    }
+
+    .tt-input,
+    .tt-hint {
+        padding-left: pxToRem(30);
+        padding-right: pxToRem(30);
+    }
+
+    .tt-suggestion {
+        margin: pxToRem(10) 0;
+        padding: pxToRem(10);
+        color: $black;
+        cursor: pointer;
+        display: block;
+
+        .search__suggestion-text {
+            margin: 0;
+        }
+
+        &:hover {
+            background-color: $red;
+            color: $white;
+        }
+    }
+}

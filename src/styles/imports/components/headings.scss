@@ -1,0 +1,34 @@
+.section-heading {
+    font-family: $base-font-family;
+    font-size: $font-xl;
+    color: $black;
+    margin: 0 0 pxToRem(10) 0;
+    font-weight: 600;
+    line-height: 1.1;
+
+    &--white {
+        color: $white;
+    }
+
+    @media screen and (min-width: $tablet) {
+        font-size: $font-xxl;
+    }
+}
+
+.section-subheading {
+    font-family: $alt-font-family;
+    font-size: $font-s;
+    color: $black;
+    margin: 0;
+    padding: 0 pxToRem(10);
+    font-weight: 400;
+
+    &--white {
+        color: $white;
+    }
+
+    @media screen and (min-width: $tablet) {
+        font-size: $font-l;
+        padding: 0;
+    }
+}

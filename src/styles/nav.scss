@@ -1,0 +1,41 @@
+// These imports have no CSS output, but provide variables, mixins and helpers to aid in construction of
+// a design cutup.
+@import 'imports/variables.scss';
+@import 'imports/functions.scss';
+@import 'imports/mixins.scss';
+@import 'imports/placeholders.scss';
+
+/*
+--------------------
+Utilities
+--------------------
+*/
+
+@import 'imports/utilities.scss';
+
+body {
+    overflow-y: scroll;
+    font-size: $base-font-scale + em;
+    font-family: Dax, Arial;
+    line-height: 1.4;
+    padding: 0;
+    margin: 0;
+    padding-top: 80px; // height of .top-bar navigation
+
+    &.menu-active {
+        overflow: hidden;
+    }
+
+    @media (min-width: 1180px) {
+        padding-top: 0;
+    }
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@import './imports/components/fonts.scss';
+@import '../modules/02 header/default/css/global.scss';
+@import '../modules/11 search-screen/css/global.scss';

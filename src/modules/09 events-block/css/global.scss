@@ -1,0 +1,82 @@
+.events {
+    background-color: $grey-medium;
+    padding: $section-margin-mobile pxToRem(10) $section-margin-mobile;
+    text-align: center;
+
+    .section-subheading {
+        margin-bottom: pxToRem(50);
+    }
+
+    .wrapper {
+        max-width: pxToRem(1220);
+    }
+
+    &__boxes {
+        display: block;
+        margin-bottom: pxToRem(50);
+        text-align: left;
+
+        @media (max-width: $tablet) {
+            .slick-list {
+                margin-bottom: pxToRem(40);
+            }
+        }
+    }
+
+    &__box {
+        background-color: $white;
+        width: 32%;
+        padding: pxToRem(20) pxToRem(30) pxToRem(50) pxToRem(30);
+        border-left: 8px solid $red;
+        text-decoration: none;
+        position: relative;
+
+        &:hover {
+            .event__arrow {
+                transform: translateX(#{pxToRem(15)});
+            }
+        }
+    }
+}
+
+.event {
+    &__title {
+        color: $black;
+        font-family: $base-font-family;
+        font-size: $font-xl;
+        margin: 0;
+        padding: 0;
+        max-width: pxToRem(270);
+        margin-bottom: pxToRem(20);
+        font-weight: 600;
+        padding-right: pxToRem(20);
+    }
+
+    &__date {
+        color: $black;
+        font-family: $alt-font-family;
+        font-size: $font-s;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__arrow {
+        position: absolute;
+        top: pxToRem(35);
+        right: pxToRem(35);
+        color: $black;
+        font-size: $font-s;
+        transition: transform 0.5s;
+    }
+}
+
+@media screen and (min-width: $tablet) {
+    .events {
+        padding: $section-margin-desktop pxToRem(30);
+
+        &__boxes {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

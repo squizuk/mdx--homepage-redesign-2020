@@ -1,5 +1,5 @@
 // Base font
-$base-font-scale: 1;  // The font scale multiplier (e.g. 2 = 32px/2em/2rem)
+$base-font-scale: 1; // The font scale multiplier (e.g. 2 = 32px/2em/2rem)
 $base-font-pixel: 16; // Used for font size calculations & conversions
 $base-font-family: Dax;
 $alt-font-family: Arial;
@@ -9,15 +9,25 @@ $base-font-colour: #4a4a4a;
 $content-selection-highlight: #b3d4fc;
 
 // Default breakpoints
-$tablet: 768px;
+$tablet: 769px;
 $desktop: 1300px;
 
 // Colours
 $black: #000000;
-$white: #FFFFFF;
-$red: #D52B1E;
-$red-dark: #BD251A;
+$white: #ffffff;
+$red: #d52b1e;
+$red-dark: #bd251a;
 $grey-dark: #333333;
-$grey-medium: #4D4D4D;
-$grey-light: #D1D1D1;
-$bg-grey: #EFEFEF;
+$grey-medium: #4d4d4d;
+$grey-light: #d1d1d1;
+$bg-grey: #efefef;
+
+$font-xs: 1.333rem; // 12px
+$font-s: 1rem; // 16px
+$font-l: 1.25rem; // 20px
+$font-xl: 1.5rem; // 24px
+$font-xxl: 2.25rem; // 36px
+$font-xxxl: 3.25rem; // 52px
+
+$section-margin-mobile: 3.125rem;
+$section-margin-desktop: 4.6875rem;
