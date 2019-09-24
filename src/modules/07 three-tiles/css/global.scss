@@ -9,9 +9,14 @@
     overflow: hidden;
     text-align: center;
 
+    &__wrapper {
+        max-width: pxToRem(1200);
+        margin: 0 auto;
+    }
+
     &__boxes {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         margin: pxToRem(60) 0;
         position: relative;
         flex-wrap: wrap;
@@ -19,6 +24,7 @@
 
     &__box {
         width: 100%;
+        max-width: pxToRem(400);
         background-size: cover;
         position: relative;
         z-index: 1;
@@ -45,6 +51,7 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+            max-height: 340px;
 
             &::after {
                 content: '';
@@ -161,6 +168,10 @@
     .three-tiles {
         margin-bottom: $section-margin-desktop;
         padding: 0 pxToRem(40);
+        &__boxes {
+            justify-content: space-between;
+        }
+
         &__box {
             width: 32%;
             margin-bottom: 0;
