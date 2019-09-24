@@ -7,14 +7,14 @@
 
     &__wrapper {
         margin: 0 auto;
-        max-width: pxToRem(1440);
+        max-width: pxToRem(1200);
         width: 100%;
         position: absolute;
         z-index: -1;
     }
 
     &__image {
-        height: pxToRem(480);
+        //height: pxToRem(480);
 
         img {
             width: 100%;
@@ -87,7 +87,7 @@
         }
 
         &__image {
-            height: pxToRem(690);
+            //height: pxToRem(690);
         }
 
         &__box {

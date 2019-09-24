@@ -12,14 +12,14 @@
 
     &__wrapper {
         margin: 0 auto;
-        max-width: pxToRem(1440);
+        max-width: pxToRem(1200);
         text-align: center;
         position: relative;
         z-index: 2;
     }
 
     &__image {
-        height: pxToRem(500);
+        //height: pxToRem(500);
         width: 100%;
         position: absolute;
         z-index: -1;
@@ -48,7 +48,7 @@
         max-width: pxToRem(536);
         text-align: left;
         margin: 0 pxToRem(10);
-        margin-top: pxToRem(450);
+        margin-top: pxToRem(200);
 
         &-text {
             margin: 0;
@@ -124,7 +124,7 @@
         &--black {
             position: absolute;
             right: pxToRem(280);
-            top: pxToRem(300);
+            top: pxToRem(280);
             z-index: -2;
             display: none;
 
@@ -141,7 +141,7 @@
         &--red {
             position: absolute;
             right: pxToRem(-50);
-            top: pxToRem(120);
+            top: pxToRem(110);
             z-index: -3;
             display: none;
 
@@ -163,9 +163,9 @@
         padding-bottom: pxToRem(120);
         overflow: hidden;
         padding: 0 pxToRem(40);
-        .section-subheading {
-            margin-bottom: pxToRem(80);
-        }
+        // .section-subheading {
+        //     margin-bottom: pxToRem(80);
+        // }
 
         &__pattern--grey,
         &__pattern--black,
@@ -175,27 +175,31 @@
         }
 
         &__wrapper {
-            height: pxToRem(780);
+            height: pxToRem(640);
         }
 
         &__image {
-            width: pxToRem(800);
+            width: pxToRem(640);
             right: 0;
-            top: pxToRem(230);
+            top: pxToRem(200);
         }
 
         &__box {
             margin: 0;
             padding: pxToRem(40);
+            //margin-top: pxToRem(450);
         }
     }
 }
 
 @media screen and (min-width: $desktop) {
     .spotlight {
+        &__wrapper {
+            height: pxToRem(740);
+        }
         &__image {
-            height: pxToRem(576);
-            width: pxToRem(1024);
+            //height: pxToRem(576);
+            width: pxToRem(800);
         }
 
         &__video {
