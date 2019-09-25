@@ -201,7 +201,7 @@
             margin-bottom: 0;
             display: block;
             position: absolute;
-            bottom: pxToRem(-100);
+            bottom: pxToRem(-80);
             left: 0;
             right: 0;
             text-align: center;
@@ -216,7 +216,7 @@
 
         &__box {
             position: absolute;
-            bottom: pxToRem(210);
+            bottom: pxToRem(170);
             left: pxToRem(30);
             right: pxToRem(30);
             padding: pxToRem(40);
