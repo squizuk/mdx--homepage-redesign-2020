@@ -318,6 +318,23 @@
                         position: fixed;
                         background: rgba(0, 0, 0, 0.9);
                     }
+
+                    &::before {
+                        content: '';
+                        display: block;
+                        left: 10%;
+                        right: 10%;
+                        height: 80px;
+                        position: fixed;
+                        top: calc(60vh + 7px);
+                        z-index: 2;
+                        pointer-events: none;
+                        background: linear-gradient(
+                            180deg,
+                            rgba(0, 0, 0, 0) 0%,
+                            rgba(0, 0, 0, 0.9) 100%
+                        );
+                    }
                 }
             }
         }
@@ -377,6 +394,7 @@
             opacity: 0;
             height: auto;
             padding: 0;
+            padding-bottom: 30px;
             width: pxToRem(450);
             position: fixed;
             top: 117px;
@@ -390,6 +408,7 @@
                     > .header-menu__sub,
                     > .header-menu__sub > .header-menu__third,
                     > .header-menu__third {
+                        transition-delay: 1s;
                         visibility: visible;
                         opacity: 1;
                         z-index: 1;
