@@ -40,6 +40,15 @@
         margin: 0 pxToRem(10) pxToRem(20) pxToRem(10);
         z-index: 8;
 
+        & .fas, & .fab {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: $white;
+            font-size: pxToRem(50);
+        }
+
         &-circle {
             height: pxToRem(150);
             width: pxToRem(150);

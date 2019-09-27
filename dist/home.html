@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home page</title>
+    <!-- Metadata -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- Imports -->
+<link
+    href="https://unpkg.com/normalize.css@8.0.1/normalize.css"
+    rel="stylesheet"
+/>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<link
+    rel="stylesheet"
+    type="text/css"
+    href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+/>
+<script src="https://kit.fontawesome.com/f239d06994.js"></script>
+
+<link href="main.css" rel="stylesheet"><link href="nav.css" rel="stylesheet"></head>
+
+<body>
+    <div class="search-screen">
+    <div class="search-screen__top">
+        <a href="/" title="Logo" class="logo__link">
+            <img src="mysource_files/logo-desktop.png" alt="Logo" class="logo__image logo-desktop" />
+        </a>
+        <a href="#" class="search-screen__top-close">
+            <img src="mysource_files/close.png" alt="close icon">
+        </a>
+    </div>
+    <div class="search-screen__content">
+        <div id="multiple-datasets" class="search-screen__search-wrapper">
+            <button type="submit" class="search-screen__search-btn"><span class="sr-only"></span></button>
+            <input type="text" class="typeahead" placeholder="Search">
+        </div>
+    </div>
+</div>
+
+    <div class="page-wrapper">
+        <div class="top-bar">
+    <div class="top-bar__container">
+        <div class="logo">
+            <a href="/" title="Logo" class="logo__link">
+                <img src="mysource_files/logo-desktop.png" alt="Logo" class="logo__image logo-desktop" />
+                <img src="mysource_files/logo-mobile.png" alt="Logo" class="logo__image logo-mobile" />
+            </a>
+        </div>
+        <div class="top-bar__wrapper">
+            <div class="top-bar__left-part">
+                <div class="top-bar__left slinky-menu" id="menu">
+                    <ul class="header-menu__list" id="main-nav">
+                        <li class="header-menu__item megamenu">
+                            <a href="https://www.mdx.ac.uk/courses" class="header-menu__link">Courses</a>
+                            <ul class="header-menu__list header-menu__sub">
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Art and design</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Business</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Cinematics and games<i
+                                            class="fa fa-chevron-right"></i></a>
+                                    <ul class="header-menu__list header-menu__third">
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub-title">Cinematics & Games</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Film and television</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Games and visual effects</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Film and television</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Games and visual effects</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Film and television</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Games and visual effects</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Film and television</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Games and visual effects</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Film and television</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Games and visual effects</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Film and television</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Games and visual effects</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Computer science, engineering and
+                                        maths</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Creative media and writing</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Education</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Healthcare and social work</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Law</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Natural sciences</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Professional practice and work based
+                                        learning</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Psychology</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Social sciences</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Sport and exercise science and
+                                        rehabilitation</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Short courses and CPD</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Order a prospectus</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Clearing</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">January start</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Study abroad and exchange</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="https://www.mdx.ac.uk/study-with-us" class="header-menu__link">Study with us</a>
+                        </li>
+                        <li class="header-menu__item">
+                            <a href="https://www.mdx.ac.uk/student-life" class="header-menu__link">Student life</a>
+                        </li>
+                        <li class="header-menu__item megamenu">
+                            <a href="https://www.mdx.ac.uk/about-us" class="header-menu__link">About us</a>
+                            <ul class="header-menu__list header-menu__sub">
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Art and design</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Business</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Cinematics and games<i
+                                            class="fa fa-chevron-right"></i></a>
+                                    <ul class="header-menu__list header-menu__third">
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub-title">Cinematics & Games</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Film and television</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Games and visual effects</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Film and television</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Games and visual effects</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Film and television</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Games and visual effects</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Film and television</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Games and visual effects</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Film and television</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Games and visual effects</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Film and television</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Games and visual effects</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Computer science, engineering and
+                                        maths</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Creative media and writing</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Education</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Healthcare and social work</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Law</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Natural sciences</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Professional practice and work based
+                                        learning</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Psychology</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Social sciences</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Sport and exercise science and
+                                        rehabilitation</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Short courses and CPD</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Order a prospectus</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Clearing<i
+                                            class="fa fa-chevron-right"></i></a>
+                                    <ul class="header-menu__list header-menu__third">
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub-title">Clearing</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Film and television</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Games and visual effects</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Film and television</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Games and visual effects</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Film and television</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Games and visual effects</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Film and television</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Games and visual effects</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Film and television</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Games and visual effects</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Film and television</a>
+                                        </li>
+                                        <li class="header-menu__item">
+                                            <a href="#" class="header-menu__link__sub">Games and visual effects</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">January start</a>
+                                </li>
+                                <li class="header-menu__item">
+                                    <a href="#" class="header-menu__link__sub">Study abroad and exchange</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="top-bar__right">
+                <ul class="top-bar__right-navigation">
+                    <li class="right-navigation__item">
+                        <a href="https://www.mdx.ac.uk/our-research" class="right-navigation__link">Our research</a>
+                    </li>
+                    <li class="right-navigation__item">
+                        <a href="https://www.mdx.ac.uk/global-impact" class="right-navigation__link">International</a>
+                    </li>
+                    <li class="right-navigation__item">
+                        <a href="https://www.mdx.ac.uk/business-and-partnerships"
+                            class="right-navigation__link">Business & partnerships </a>
+                    </li>
+                    <li class="right-navigation__item">
+                        <a href="https://www.mdx.ac.uk/get-in-touch" class="right-navigation__link">Get in touch</a>
+                    </li>
+                </ul>
+                <a href="#" class="top-bar__search">
+                    <img src="mysource_files/search-white.svg" alt="search icon">
+                </a>
+                <a href="#" class="top-bar__hamburger">
+                    <i class="fa fa-bars hamburger-icon"></i>
+                    <!-- <i class="fa fa-times close-icon"></i> -->
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        <main class="main" role="main">
+            <div class="hero-banner">
+    <div class="wrapper hero-banner__wrapper">
+        <a href=" #spotlight-section" class="hero-banner__arrow-down">
+            <img src="mysource_files/arrow-down.png" class="arrow-down" alt="">
+        </a>
+        <div class="hero-banner__box">
+            <div class="hero-banner__box-text">
+                <h1 class="hero-banner__box-title">Big key heading</h1>
+                <p class="hero-banner__box-subtitle">Subheading for big key heading text text text</p>
+            </div>
+            <div class="hero-banner__search-wrapper">
+                <div id="bloodhound" class="hero-banner__search-input">
+                    <button type="submit" class="hero-banner__search-btn"><span class="sr-only"></span></button>
+                    <input type="text" class="typeahead" placeholder="Search">
+                </div>
+            </div>
+            <div class="hero-banner__ctas">
+                <a href="#" class="btn btn--red">See all courses</a>
+                <a href="#" class="btn btn--black">Second CTA</a>
+            </div>
+        </div>
+        <div class="hero-banner__pattern--white"></div>
+    </div>
+    <img class="hero-banner__image" src="mysource_files/banner.png" alt="" data-opacity="0" data-object-fit="cover">
+</div>
+
+            <div class="spotlight" id="spotlight-section">
+    <div class="spotlight__wrapper">
+        <h2 class="section-heading">"Spotlight" heading"</h2>
+        <p class="section-subheading">
+            Spotlight introductory line text text text text text text
+        </p>
+        <div class="spotlight__image">
+            <img src="mysource_files/spotlight-image.png" />
+        </div>
+        <!-- <div class="spotlight__video">
+            <iframe src="https://player.vimeo.com/video/65107797?title=0&byline=0&portrait=0" frameborder="0"
+                webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div> -->
+        <div class="spotlight__box">
+            <p class="spotlight__box-text">
+                Paragraph to summarise content of spotlight section text text
+                text text text text text text text text text text text
+            </p>
+            <a href="#" class="spotlight__box-link"
+                >CTA 1 text text text
+                <i class="fa fa-chevron-right spotlight__box-link__arrow"></i
+            ></a>
+            <a href="#" class="spotlight__box-link"
+                >CTA 1 text text text
+                <i class="fa fa-chevron-right spotlight__box-link__arrow"></i>
+            </a>
+            <a href="#" class="spotlight__box-link"
+                >CTA 1 text text text
+                <i class="fa fa-chevron-right spotlight__box-link__arrow"></i>
+            </a>
+        </div>
+        <div class="spotlight__pattern--white" data-scroll-speed="8"></div>
+        <div class="spotlight__pattern--grey" data-scroll-speed="4"></div>
+        <div class="spotlight__pattern--black" data-scroll-speed="8"></div>
+        <div class="spotlight__pattern--red" data-scroll-speed="-15"></div>
+    </div>
+</div>
+
+            <!--
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    ADD 'secondary-banner--video' class for video wrapper
+-->
+<div class="secondary-banner secondary-banner--image wrapper">
+    <div class="secondary-banner__pattern--white" data-scroll-speed="12"></div>
+    <div class="secondary-banner__wrapper" data-animate="slide-up" data-animate-time="long">
+        <div class="secondary-banner__image">
+            <img src="mysource_files/image-banner.png" alt="" data-object-fit="cover">
+        </div>
+        <!-- <div class="secondary-banner__video">
+            <iframe src="https://player.vimeo.com/video/65107797?title=0&byline=0&portrait=0" frameborder="0"
+                webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div> -->
+    </div>
+    <div class="secondary-banner__box" data-animate="slide-down" data-animate-time="medium">
+        <div class="secondary-banner__box-text">
+            <h2 class="section-heading section-heading--white">Secondary banner heading</h2>
+            <p class="section-subheading section-subheading--white">Secondary banner text text text text text text text
+                text</p>
+        </div>
+        <a href="#" class="secondary-banner__cta btn btn--red">Banner CTA</a>
+    </div>
+</div>
+
+            <div class="infographics" id="infographics">
+    <div class="wrapper">
+        <h2 class="section-heading">Infographics stats heading</h2>
+        <p class="section-subheading">Infographic stats introductory line text text text text text text</p>
+    </div>
+    <div class="infographics__grey-wrapper">
+        <div class="wrapper">
+            <div class="infographics__list">
+                <div class="infographics__item">
+                    <div class="infographics__item-circle">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <p class="infographics__item-title">Stat 1 text text text text text</p>
+                </div>
+                <div class="infographics__item">
+                    <div class="infographics__item-circle">
+                        <i class="fas fa-user-clock"></i>
+                    </div>
+                    <p class="infographics__item-title">Stat 2 text text text text text text text text text text</p>
+                </div>
+                <div class="infographics__item">
+                    <div class="infographics__item-circle">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <p class="infographics__item-title">Stat s3 text text text text text text</p>
+                </div>
+                <div class="infographics__item">
+                    <div class="infographics__item-circle">
+                        <i class="fas fa-user-clock"></i>
+                    </div>
+                    <p class="infographics__item-title">Stat s3 text text text text text text</p>
+                </div>
+                <div class="infographics__item">
+                    <div class="infographics__item-circle">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <p class="infographics__item-title">Stat s3 text text text text text text</p>
+                </div>
+            </div>
+            <a href="#" class="btn btn--red">Link CTA</a>
+            <div class="infographics__pattern--white1" data-scroll-speed="14"></div>
+            <div class="infographics__pattern--white2" data-scroll-speed="-20"></div>
+        </div>
+    </div>
+</div>
+
+            <div class="three-tiles">
+    <div class="wrapper">
+        <h2 class="section-heading">Three tile section heading</h2>
+        <p class="section-subheading">Introductory text for three tile section heading text text</p>
+        <div class="three-tiles__wrapper">
+            <div class="three-tiles__boxes">
+                <div class="three-tiles__box" data-animate="slide-up" data-animate-time="short">
+                    <a class="three-tiles__box-content" href="#">
+                        <div style="background-image: url('mysource_files/tile1.png')"
+                            class="three-tiles__box-image"></div>
+                        <p class="three-tiles__box-link">Tile 1 link</p>
+                    </a>
+                </div>
+                <div class="three-tiles__box" data-animate="slide-up" data-animate-time="medium">
+                    <a class="three-tiles__box-content" href="#">
+                        <div style="background-image: url('mysource_files/tile2.png')"
+                            class="three-tiles__box-image"></div>
+                        <p class="three-tiles__box-link">Tile 2 link</p>
+                    </a>
+                </div>
+                <div class="three-tiles__box" data-animate="slide-up" data-animate-time="long">
+                    <a class="three-tiles__box-content" href="#">
+                        <div style="background-image: url('mysource_files/tile3.png')"
+                            class="three-tiles__box-image"></div>
+                        <p href="#" class="three-tiles__box-link">Tile 3 link</p>
+                    </a>
+                    <a href="#" class="three-tiles__box-link--a">Tile 3 link A</a>
+                    <a href="#" class="three-tiles__box-link--b">Tile 3 link B</a>
+                    <a href="#" class="three-tiles__box-link--c">Tile 3 link C</a>
+                </div>
+                <div class="three-tiles__pattern--grey1" data-scroll-speed="14"></div>
+                <div class="three-tiles__pattern--white1" data-scroll-speed="-20"></div>
+                <div class="three-tiles__pattern--grey2" data-scroll-speed="13"></div>
+                <div class="three-tiles__pattern--white2" data-scroll-speed="-8"></div>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="stories">
+    <div class="wrapper">
+        <h2 class="section-heading">Stories section heading</h2>
+        <p class="section-subheading">Stories section subheading text text text text text</p>
+        <div class="stories__box--first__pattern--red" data-scroll-speed="12"></div>
+        <div class="stories__boxes-wrapper">
+            <div class="stories__boxes">
+                <a href="#" data-animate="slide-up" data-animation-time="medium" class="stories__box--first">
+                    <div class="stories__box--first__image">
+                        <img src="mysource_files/story.png" data-object-fit="cover">
+                    </div>
+                    <div class="stories__box--first__wrapper">
+                        <h3 class="stories__box--second__title">Big story headline text text text text text text text
+                        </h3>
+                        <p class="stories__box--second__subtitle">Big story summary text text text text text text text
+                            text
+                            text text text text text</p>
+                        <i class="fa fa-chevron-right stories__box--arrow"></i>
+                    </div>
+                </a>
+                <a href="#" class="stories__box--second">
+                    <h3 class="stories__box--second__title">Secondary story 1 headline</h3>
+                    <p class="stories__box--second__subtitle">Secondary story 1 summary text text text text</p>
+                    <i class="fa fa-chevron-right stories__box--arrow"></i>
+                </a>
+                <a href="#" class="stories__box--third">
+                    <h3 class="stories__box--second__title">Secondary story 2 headline</h3>
+                    <p class="stories__box--second__subtitle">Secondary story 2 summary text text text text</p>
+                    <i class="fa fa-chevron-right stories__box--arrow"></i>
+                </a>
+            </div>
+            <div class="stories__box--first__pattern--white" data-scroll-speed="19"></div>
+        </div>
+        <a href="#" class="stories__cta btn btn--red">Link CTA</a>
+    </div>
+</div>
+
+            <div class="events">
+    <div class="wrapper">
+        <h2 class="section-heading section-heading--white">Events block heading</h2>
+        <p class="section-subheading section-subheading--white">Events block subheading text text text text</p>
+        <div class="events__boxes">
+            <a href="#" class="events__box">
+                <h3 class="event__title">Event 1 name text text text text</h3>
+                <p class="event__date">Day Xth Month YYYY</p>
+                <i class="fa fa-chevron-right event__arrow"></i>
+            </a>
+            <a href="#" class="events__box">
+                <h3 class="event__title">Event 1 name text text text text</h3>
+                <p class="event__date">Day Xth Month YYYY</p>
+                <i class="fa fa-chevron-right event__arrow"></i>
+            </a>
+            <a href="#" class="events__box">
+                <h3 class="event__title">Event 1 name text text text text</h3>
+                <p class="event__date">Day Xth Month YYYY</p>
+                <i class="fa fa-chevron-right event__arrow"></i>
+            </a>
+        </div>
+        <a href="#" class="events__cta btn btn--black">Link CTA</a>
+    </div>
+</div>
+
+        </main><!-- /.main -->
+
+        <!--noindex-->
+        <footer class="footer">
+    <div class="footer__socials">
+        <div class="footer__socials-wrapper">
+            <a href="#" class="footer__contact-us btn btn--red">Contact us</a>
+            <div class="footer__socials-links">
+                <p class="footer__socials-title">Follow Us:</p>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer__links">
+        <div class="footer__links-wrapper">
+            <ul class="footer__links-column">
+                <li class="footer__links-item">
+                    <a href="https://www.mdx.ac.uk/about-us/policies/website-accessibility"
+                        class="footer__link">Accessibility</a>
+                </li>
+                <li class="footer__links-item">
+                    <a href="https://www.mdx.ac.uk/terms-and-conditions" class="footer__link">Terms and conditions</a>
+                </li>
+                <li class="footer__links-item">
+                    <a href="https://www.mdx.ac.uk/about-us/policies/charity-information" class="footer__link">Charity
+                        information</a>
+                </li>
+                <li class="footer__links-item">
+                    <a href="https://www.mdx.ac.uk/about-us/policies/freedom-of-information"
+                        class="footer__link">Freedom
+                        of information</a>
+                </li>
+            </ul>
+            <ul class="footer__links-column">
+                <li class="footer__links-item">
+                    <a href="https://fs.mdx.ac.uk/adfs/ls/?client-request-id=a3a60f55-38f0-4cdf-8c3c-802ba57ac208&username=&wa=wsignin1.0&wtrealm=urn%3afederation%3aMicrosoftOnline&wctx=estsredirect%3d2%26estsrequest%3drQIIAY2RPWzTQACFc3FikoDUCjF06FChslCdfT-O_wRIDillaAgJSlqyIMc-N4ntnJPYOGRiRIihc9lAIBE2JmBkYOjUlUqIFTFVTIwkYmHsNzy99X3vuoAlbG6ifxC4TIg8D0OHLdt_jC-XVlsrb1-f6T92X9x4uvVm9qVwBIqhO5VsR0r8Objai-NoYsoyT-KAc1_intd3GFXLksNDmae2_BGAEwDmWU2lGsIG0hWEqa4Qg-iSx4jLvDKGBqMUKqpOoU2ZAZGrMlbuMs9m7ml2pW4lcY8sg4_7M_Y7W_T4OHwU8Ul8JARVZ6Jtc-ugalWa6J7arVi7PVae8kZSU9pcYfvKiNJ2NJhVeezrrU4rjdvVCu6mvhVPm2p3ZxrdaaZaI2j0HtiNZo0c7ASjesetqI8fwj0NenHg6QMf0rv34Vw4l7gPgriYH_LhsSDyiA377kkO_MpdQnmzUCitXlwTNzJ_cuBVfiH43bf1zfKnr9b759dufX-JMsd5eUjZfmdvUo0GWxWd4G3iBn4tbYx65El9oCW3seIPjVaahnbrpmHiQxEciuJPEZyJ4NmFzOfiOV45LV0hizcg0iFBG1gxKTUJ7vwF0"
+                        class="footer__link">Staff email</a>
+                </li>
+                <li class="footer__links-item">
+                    <a href="https://unihub.mdx.ac.uk/" class="footer__link">Student UniHub</a>
+                </li>
+                <li class="footer__links-item">
+                    <a href="https://www.mdx.ac.uk/about-us/policies/privacy" class="footer__link">Privacy</a>
+                </li>
+                <li class="footer__links-item">
+                    <a href="https://www.mdx.ac.uk/about-us/policies/cookies" class="footer__link">Cookies</a>
+                </li>
+            </ul>
+            <div class="footer__contact-info">
+                <p class="footer__contact-item">Middlesex University, The Burroughs,</p>
+                <p class="footer__contact-item">Hendon, London NW4 4BT</p>
+                <p class="footer__contact-item">Switchboard: +44 (0)20 8411 5000</p>
+                <p class="footer__contact-item">Admissions: +44 (0)20 8411 5555</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+        <!--endnoindex-->
+    </div><!-- /.page-wrapper -->
+    <div class="footer-scripts">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
+
+    </div>
+<script type="text/javascript" src="js/runtime.js"></script><script type="text/javascript" src="js/main.js"></script><script type="text/javascript" src="js/nav.js"></script></body>
+
+</html>

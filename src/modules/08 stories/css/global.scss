@@ -39,6 +39,8 @@
 
     &__boxes-wrapper {
         position: relative;
+        max-width: pxToRem(1200);
+        margin: 0 auto;
     }
 
     &__box--first {
@@ -55,6 +57,7 @@
         }
 
         &__image {
+            max-height: 300px;
             img {
                 height: 100%;
                 object-fit: cover;
@@ -110,8 +113,8 @@
                 display: block;
 
                 @media (min-width: $desktop) {
-                    height: pxToRem(478);
-                    width: pxToRem(482);
+                    height: pxToRem(370);
+                    width: pxToRem(370);
                 }
             }
 
@@ -124,7 +127,7 @@
 
     &__box--second {
         display: block;
-        min-height: pxToRem(290);
+        min-height: pxToRem(200);
         background-color: rgba($grey-dark, 0.9);
         text-decoration: none;
         position: relative;
@@ -161,7 +164,7 @@
 
     &__box--third {
         display: block;
-        min-height: pxToRem(360);
+        min-height: pxToRem(300);
         background-color: rgba($grey-dark, 0.9);
         text-decoration: none;
         position: relative;
@@ -214,12 +217,16 @@
 
         &__box--first {
             width: 49%;
-            height: pxToRem(700);
+            height: pxToRem(500);
             padding-bottom: 0;
             background-position: center;
 
             &__wrapper {
                 margin-top: 0;
+            }
+        
+            &__image {
+                    max-height: unset;
             }
         }
 
