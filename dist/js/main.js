@@ -142,6 +142,8 @@ var navigation = function navigation() {
   var menuList = document.querySelector('.top-bar__left-part');
   var menuButtonIcon = document.querySelector('.fa.fa-bars.hamburger-icon');
   var body = document.querySelector('body');
+  var menuItemsSeconds = document.querySelectorAll('.header-menu__sub');
+  var menuItemsThirds = document.querySelectorAll('.header-menu__third');
   var menuLinks = document.querySelectorAll('.header-menu__sub > .header-menu__item');
 
   var removeAllActiveStates = function removeAllActiveStates() {
@@ -150,6 +152,16 @@ var navigation = function navigation() {
     });
   };
 
+  menuItemsSeconds.forEach(function (link) {
+    if (link.getElementsByTagName('li').length >= 8) {
+      link.classList.add('list-long');
+    }
+  });
+  menuItemsThirds.forEach(function (link) {
+    if (link.getElementsByTagName('li').length >= 8) {
+      link.classList.add('list-long');
+    }
+  });
   menuLinks.forEach(function (link) {
     link.addEventListener('mouseover', function () {
       if ($(window).width() > 1180) {

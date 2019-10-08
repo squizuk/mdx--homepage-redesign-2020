@@ -28,7 +28,8 @@ const navigation = () => {
     const menuList = document.querySelector('.top-bar__left-part');
     const menuButtonIcon = document.querySelector('.fa.fa-bars.hamburger-icon');
     const body = document.querySelector('body');
-
+    const menuItemsSeconds = document.querySelectorAll('.header-menu__sub');
+    const menuItemsThirds = document.querySelectorAll('.header-menu__third');
     const menuLinks = document.querySelectorAll('.header-menu__sub > .header-menu__item');
 
     const removeAllActiveStates = () => {
@@ -36,8 +37,18 @@ const navigation = () => {
             link.classList.remove('active');
         })
     }
-
+    menuItemsSeconds.forEach((link) => {
+        if (link.getElementsByTagName('li').length >= 8) {
+            link.classList.add('list-long');
+        }
+    })
+    menuItemsThirds.forEach((link) => {
+        if (link.getElementsByTagName('li').length >= 8) {
+            link.classList.add('list-long');
+        }
+    })
     menuLinks.forEach((link) => {
+
         link.addEventListener('mouseover', () => {
             if ($(window).width() > 1180) {
                 const hasSubmenu = $(link).find('.header-menu__third').length > 0;
@@ -88,5 +99,3 @@ const searchBar = () => {
 
 navigation();
 searchBar();
-
-

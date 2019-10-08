@@ -435,8 +435,32 @@
                 font-size: $font-l;
                 font-family: $alt-font-family;
             }
+            &.list-long {
+                &:after {
+                    display: none;
+                    @media screen and (min-width: #{pxToRem(900)}) {
+                        display: block;
+                    }
+                    content: '';
+                    position: fixed;
+                    z-index: 10;
+                    left: 48%;
+                    width: 15px;
+                    height: 15px;
+                    border-bottom: solid $white 2px;
+                    border-right: solid $white 2px;
+                    transform: rotate(45deg);
+                    top: calc(60vh + 30px);
+                }
+            }
         }
-
+        &__third {
+            &.list-long {
+                &:after {
+                    left: 87%;
+                }
+            }
+        }
         &__sub {
             left: 10%;
         }
