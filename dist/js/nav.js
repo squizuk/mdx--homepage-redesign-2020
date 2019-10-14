@@ -106,16 +106,6 @@ searchBar();
 
 /***/ }),
 
-/***/ 19:
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(20);
-__webpack_require__(1);
-module.exports = __webpack_require__(3);
-
-
-/***/ }),
-
 /***/ 2:
 /***/ (function(module, exports) {
 
@@ -483,6 +473,16 @@ function () {
 /***/ 20:
 /***/ (function(module, exports, __webpack_require__) {
 
+__webpack_require__(21);
+__webpack_require__(1);
+module.exports = __webpack_require__(3);
+
+
+/***/ }),
+
+/***/ 21:
+/***/ (function(module, exports, __webpack_require__) {
+
 // extracted by mini-css-extract-plugin
 
 /***/ }),
@@ -577,4 +577,4 @@ function () {
 
 /***/ })
 
-},[[19,0]]]);
+},[[20,0]]]);

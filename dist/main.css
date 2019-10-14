@@ -666,11 +666,19 @@ body {
     z-index: -1; }
   .spotlight__video {
     height: 31.25rem;
-    width: 50rem;
+    width: 100%;
     position: absolute;
-    right: 6.875rem;
-    top: 14.375rem;
     z-index: -1; }
+    .spotlight__video.active {
+      z-index: 0; }
+    .spotlight__video-overlay {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute; }
+      .spotlight__video-overlay.hidden {
+        z-index: -1; }
     .spotlight__video iframe {
       position: absolute;
       top: 0;
@@ -777,7 +785,10 @@ body {
       top: 12.5rem; }
     .spotlight__box {
       margin: 0;
-      padding: 2.5rem; } }
+      padding: 2.5rem; }
+    .spotlight__video {
+      width: 50rem;
+      right: 6.875rem; } }
 
 @media screen and (min-width: 1300px) {
   .spotlight__wrapper {

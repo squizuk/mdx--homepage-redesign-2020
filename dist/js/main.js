@@ -17782,6 +17782,7 @@ __webpack_require__(15);
 __webpack_require__(16);
 __webpack_require__(17);
 __webpack_require__(18);
+__webpack_require__(19);
 module.exports = __webpack_require__(3);
 
 
@@ -18391,10 +18392,30 @@ $('.hero-banner__arrow-down').on('click', function (e) {
 /* 14 */
 /***/ (function(module, exports) {
 
+var showVideo = function showVideo() {
+  var videoBox = document.querySelector('.spotlight__video');
+  var videoOverlay = document.querySelector('.spotlight__video-overlay');
 
+  var openVideo = function openVideo() {
+    videoBox.classList.add('active');
+    videoOverlay.classList.add('hidden');
+  };
+
+  videoOverlay.addEventListener('click', function () {
+    openVideo();
+  });
+};
+
+showVideo();
 
 /***/ }),
 /* 15 */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+/* 16 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18415,13 +18436,13 @@ __webpack_require__.r(__webpack_exports__);
 })();
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports) {
 
 
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18442,7 +18463,7 @@ __webpack_require__.r(__webpack_exports__);
 })();
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
