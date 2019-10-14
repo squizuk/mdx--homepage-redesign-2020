@@ -95,6 +95,20 @@
                 }
             }
         }
+        &:first-child {
+            .three-tiles__box-link {
+                &--a,
+                &--b,
+                &--c {
+                    background-color: $bg-grey;
+
+                    &:hover {
+                        background-color: $red-dark;
+                        color: $white;
+                    }
+                }
+            }
+        }
     }
 
     &__pattern {
@@ -175,6 +189,15 @@
         &__box {
             width: 32%;
             margin-bottom: 0;
+            &:first-child {
+                .three-tiles__box-link {
+                    &--a,
+                    &--b,
+                    &--c {
+                        background-color: $white;
+                    }
+                }
+            }
         }
 
         &__box-link {
