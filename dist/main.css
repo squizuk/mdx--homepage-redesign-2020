@@ -1297,7 +1297,8 @@ body {
       .stories__box--first__wrapper {
         margin-top: 0; }
       .stories__box--first__image {
-        max-height: unset; }
+        max-height: unset;
+        max-height: none; }
     .stories__box--second {
       z-index: 8;
       width: 24%; }

@@ -224,9 +224,10 @@
             &__wrapper {
                 margin-top: 0;
             }
-        
+
             &__image {
                     max-height: unset;
+                    max-height: none;
             }
         }
 
