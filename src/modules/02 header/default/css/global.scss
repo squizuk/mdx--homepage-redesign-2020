@@ -58,8 +58,11 @@
     }
 }
 
-.header-menu__link:hover {
-    text-decoration: none;
+.header-menu__link {
+    font-family: $base-font-family;
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 .header-menu__link__sub:hover {
