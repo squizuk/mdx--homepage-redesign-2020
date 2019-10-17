@@ -60,6 +60,7 @@
 
 .header-menu__link {
     font-family: $base-font-family;
+    line-height: 1.4;
     &:hover {
         text-decoration: none;
     }
@@ -67,6 +68,10 @@
 
 .header-menu__link__sub:hover {
     text-decoration: none;
+}
+
+.right-navigation__link {
+    font-family: $base-font-family;
 }
 
 @media screen and (max-width: #{pxToRem(1179)}) {

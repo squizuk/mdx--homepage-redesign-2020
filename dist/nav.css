@@ -159,12 +159,16 @@ html {
   border-bottom: none; }
 
 .header-menu__link {
-  font-family: Dax; }
+  font-family: Dax;
+  line-height: 1.4; }
   .header-menu__link:hover {
     text-decoration: none; }
 
 .header-menu__link__sub:hover {
   text-decoration: none; }
+
+.right-navigation__link {
+  font-family: Dax; }
 
 @media screen and (max-width: 73.6875rem) {
   .slinky-menu {
