@@ -154,7 +154,7 @@ html {
 .logo-mobile {
   height: 2.75rem; }
 
-.header-menu__list .megamenu {
+.header-menu__list .hugemenu {
   background: transparent;
   border-bottom: none; }
 
@@ -335,7 +335,7 @@ html {
       padding: 0;
       overflow-x: none;
       overflow-y: none; }
-      .top-bar__left > .header-menu__list > .header-menu__item.megamenu:hover::after {
+      .top-bar__left > .header-menu__list > .header-menu__item.hugemenu:hover::after {
         content: '';
         height: 60vh;
         display: block;
@@ -344,7 +344,7 @@ html {
         left: 10%;
         position: fixed;
         background: rgba(0, 0, 0, 0.9); }
-      .top-bar__left > .header-menu__list > .header-menu__item.megamenu:hover::before {
+      .top-bar__left > .header-menu__list > .header-menu__item.hugemenu:hover::before {
         content: '';
         display: block;
         left: 10%;

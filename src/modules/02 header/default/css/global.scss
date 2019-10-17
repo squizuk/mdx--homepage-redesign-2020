@@ -52,7 +52,7 @@
 }
 
 .header-menu__list {
-    & .megamenu {
+    & .hugemenu {
         background: transparent;
         border-bottom: none;
     }
@@ -312,7 +312,7 @@
             overflow-x: none;
             overflow-y: none;
 
-            .top-bar__left > & > .header-menu__item.megamenu {
+            .top-bar__left > & > .header-menu__item.hugemenu {
                 &:hover {
                     &::after {
                         content: '';
