@@ -154,6 +154,10 @@ html {
 .logo-mobile {
   height: 2.75rem; }
 
+.header-menu__list .megamenu {
+  background: transparent;
+  border-bottom: none; }
+
 @media screen and (max-width: 73.6875rem) {
   .slinky-menu {
     overflow: hidden;
