@@ -659,8 +659,7 @@ html {
       font-weight: 600;
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
-      text-align: center;
-      margin: 0; }
+      text-align: center; }
       @media (min-width: 769px) {
         .footer__socials-title {
           padding-right: 1.875rem;
@@ -740,6 +739,9 @@ html {
     transition: 0.5s background-color;
     color: #ffffff;
     display: inline-block; }
+
+p.footer__socials-title {
+  margin: 0; }
 
 @media screen and (min-width: 769px) {
   .footer__socials-wrapper {

@@ -21,7 +21,6 @@
             font-weight: 600;
             flex-basis: 100%;
             text-align: center;
-            margin: 0;
             @media (min-width: $tablet) {
                 padding-right: pxToRem(30);
                 text-align: left;
@@ -106,6 +105,9 @@
         color: $white;
         display: inline-block;
     }
+}
+p.footer__socials-title {
+    margin: 0;
 }
 
 @media screen and (min-width: $tablet) {
