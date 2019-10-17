@@ -79,6 +79,9 @@
         text-decoration: none;
         font-family: $alt-font-family;
         font-size: $font-s;
+        &:hover {
+            text-decoration: none;
+        }
     }
 
     &__contact-item {

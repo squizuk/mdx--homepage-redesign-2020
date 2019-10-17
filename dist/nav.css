@@ -169,6 +169,8 @@ html {
 
 .right-navigation__link {
   font-family: Dax; }
+  .right-navigation__link:hover {
+    text-decoration: none; }
 
 @media screen and (max-width: 73.6875rem) {
   .slinky-menu {
@@ -725,6 +727,8 @@ html {
     text-decoration: none;
     font-family: Arial;
     font-size: 1rem; }
+    .footer__link:hover {
+      text-decoration: none; }
   .footer__contact-item {
     color: #ffffff;
     font-family: Arial;

@@ -72,6 +72,9 @@
 
 .right-navigation__link {
     font-family: $base-font-family;
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 @media screen and (max-width: #{pxToRem(1179)}) {
