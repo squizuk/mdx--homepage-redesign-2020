@@ -58,6 +58,14 @@
     }
 }
 
+.header-menu__link:hover {
+    text-decoration: none;
+}
+
+.header-menu__link__sub:hover {
+    text-decoration: none;
+}
+
 @media screen and (max-width: #{pxToRem(1179)}) {
     .slinky-menu {
         overflow: hidden;
