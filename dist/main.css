@@ -587,6 +587,19 @@ body {
     .hero-banner__search-wrapper input[type='text']::-ms-clear {
       display: none; }
 
+video {
+  margin: auto;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  visibility: visible;
+  opacity: 1;
+  width: 1907px;
+  height: auto; }
+
 @media screen and (min-width: 769px) {
   .hero-banner {
     margin-bottom: 4.6875rem; }
