@@ -349,6 +349,8 @@ html {
       padding: 0;
       overflow-x: none;
       overflow-y: none; }
+      .header-menu__list-right {
+        display: none; }
       .top-bar__left > .header-menu__list > .header-menu__item.hugemenu:hover::after {
         content: '';
         height: 60vh;
