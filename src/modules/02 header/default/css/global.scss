@@ -199,6 +199,7 @@
         &__right {
             position: absolute;
             right: pxToRem(30);
+            top: pxToRem(20);
 
             &-navigation {
                 display: none;

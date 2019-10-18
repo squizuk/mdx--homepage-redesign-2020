@@ -266,7 +266,8 @@ html {
     background-color: #000000; }
     .top-bar__right {
       position: absolute;
-      right: 1.875rem; }
+      right: 1.875rem;
+      top: 1.25rem; }
       .top-bar__right-navigation {
         display: none; }
     .top-bar__left {
