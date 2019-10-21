@@ -163,11 +163,19 @@ var navigation = function navigation() {
     }
   });
   menuLinks.forEach(function (link) {
+    if ($(window).width() > 1180) {
+      var hasSubmenu = $(link).find('.header-menu__third').length > 0;
+
+      if (hasSubmenu) {
+        link.firstElementChild.insertAdjacentHTML('beforeend', '<i class="fa fa-chevron-right"></i>');
+      }
+    }
+
     link.addEventListener('mouseover', function () {
       if ($(window).width() > 1180) {
-        var hasSubmenu = $(link).find('.header-menu__third').length > 0;
+        var _hasSubmenu = $(link).find('.header-menu__third').length > 0;
 
-        if (hasSubmenu) {
+        if (_hasSubmenu) {
           removeAllActiveStates();
           link.classList.add('active');
         }

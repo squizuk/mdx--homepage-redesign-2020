@@ -48,6 +48,14 @@ const navigation = () => {
         }
     })
     menuLinks.forEach((link) => {
+        if ($(window).width() > 1180) {
+            const hasSubmenu = $(link).find('.header-menu__third').length > 0;
+
+            if (hasSubmenu) {
+                link.firstElementChild.insertAdjacentHTML('beforeend', '<i class="fa fa-chevron-right"></i>');
+            }
+        }
+
 
         link.addEventListener('mouseover', () => {
             if ($(window).width() > 1180) {
