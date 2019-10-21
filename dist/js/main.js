@@ -173,6 +173,11 @@ var navigation = function navigation() {
         }
       }
     });
+    link.addEventListener('mouseout', function () {
+      if ($(window).width() > 1180) {
+        removeAllActiveStates();
+      }
+    });
   });
   menuButton.addEventListener('click', function () {
     menuList.classList.toggle('active');
