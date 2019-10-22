@@ -31,7 +31,7 @@ const navigation = () => {
     const menuItemsSeconds = document.querySelectorAll('.header-menu__sub');
     const menuItemsThirds = document.querySelectorAll('.header-menu__third');
     const menuLinks = document.querySelectorAll('.header-menu__sub > .header-menu__item');
-    const menuItems = document.querySelectorAll('.header-menu__item');
+    const menuItems = document.querySelectorAll('.header-menu__item.hugemenu');
 
     const removeAllActiveStates = () => {
         menuLinks.forEach((link) => {
@@ -39,21 +39,31 @@ const navigation = () => {
         })
     }
 
+    const removeFocusedStates = () => {
+        menuItems.forEach((item) => {
+            item.classList.remove('focusin');
+        })
+    }
+
     menuItems.forEach((item) => {
         item.addEventListener('focusin', () => {
             if ($(window).width() > 1180) {
+                removeFocusedStates();
                 item.classList.add('focusin');
             }
         })  
     })
 
-    // menuItems.forEach((item) => {
-    //     item.addEventListener('focusout', () => {
-    //         if ($(window).width() > 1180) {
-    //             item.classList.remove('focusin');
-    //         }
-    //     })  
-    // })
+    menuLinks.forEach((link) => {
+        link.addEventListener('focusin', () => {
+            if ($(window).width() > 1180) {
+                menuLinks.forEach((link) => {
+                    link.classList.remove('focusin');
+                });
+                link.classList.add('focusin');
+            }
+        })  
+    })
 
     menuItemsSeconds.forEach((link) => {
         if (link.getElementsByTagName('li').length >= 8) {
