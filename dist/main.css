@@ -798,10 +798,7 @@ video {
       top: 12.5rem; }
     .spotlight__box {
       margin: 0;
-      padding: 2.5rem; }
-    .spotlight__video {
-      width: 50rem;
-      right: 6.875rem; } }
+      padding: 2.5rem; } }
 
 @media screen and (min-width: 1300px) {
   .spotlight__wrapper {

@@ -31,12 +31,22 @@ const navigation = () => {
     const menuItemsSeconds = document.querySelectorAll('.header-menu__sub');
     const menuItemsThirds = document.querySelectorAll('.header-menu__third');
     const menuLinks = document.querySelectorAll('.header-menu__sub > .header-menu__item');
+    const menuItems = document.querySelectorAll('.header-menu__item.hugemenu');
 
     const removeAllActiveStates = () => {
         menuLinks.forEach((link) => {
             link.classList.remove('active');
         })
     }
+
+    menuItems.forEach((item) => {
+        item.addEventListener('focusin', () => {
+            if ($(window).width() > 1180) {
+                item.classList.add('focusin');
+            }
+        })  
+    })
+
     menuItemsSeconds.forEach((link) => {
         if (link.getElementsByTagName('li').length >= 8) {
             link.classList.add('list-long');
@@ -56,7 +66,6 @@ const navigation = () => {
             }
         }
 
-
         link.addEventListener('mouseover', () => {
             if ($(window).width() > 1180) {
                 const hasSubmenu = $(link).find('.header-menu__third').length > 0;
@@ -67,6 +76,7 @@ const navigation = () => {
                 }
             }
         });
+
         link.addEventListener('mouseout', () => {
             if ($(window).width() > 1180) {
                 removeAllActiveStates();
