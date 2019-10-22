@@ -367,6 +367,36 @@
                         );
                     }
                 }
+                &:focus-within {
+                    &::after {
+                        content: '';
+                        height: 60vh;
+
+                        display: block;
+                        top: 87px;
+                        right: 10%;
+                        left: 10%;
+                        position: fixed;
+                        background: rgba(0, 0, 0, 0.9);
+                    }
+
+                    &::before {
+                        content: '';
+                        display: block;
+                        left: 10%;
+                        right: 10%;
+                        height: 80px;
+                        position: fixed;
+                        top: calc(60vh + 7px);
+                        z-index: 2;
+                        pointer-events: none;
+                        background: linear-gradient(
+                            180deg,
+                            rgba(0, 0, 0, 0) 0%,
+                            rgba(0, 0, 0, 0.9) 100%
+                        );
+                    }
+                }
             }
         }
 

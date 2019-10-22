@@ -38,7 +38,7 @@ var navigation = function navigation() {
   var menuItemsSeconds = document.querySelectorAll('.header-menu__sub');
   var menuItemsThirds = document.querySelectorAll('.header-menu__third');
   var menuLinks = document.querySelectorAll('.header-menu__sub > .header-menu__item');
-  var menuItems = document.querySelectorAll('.header-menu__item.hugemenu');
+  var menuItems = document.querySelectorAll('.header-menu__item');
 
   var removeAllActiveStates = function removeAllActiveStates() {
     menuLinks.forEach(function (link) {
@@ -52,7 +52,14 @@ var navigation = function navigation() {
         item.classList.add('focusin');
       }
     });
-  });
+  }); // menuItems.forEach((item) => {
+  //     item.addEventListener('focusout', () => {
+  //         if ($(window).width() > 1180) {
+  //             item.classList.remove('focusin');
+  //         }
+  //     })  
+  // })
+
   menuItemsSeconds.forEach(function (link) {
     if (link.getElementsByTagName('li').length >= 8) {
       link.classList.add('list-long');
