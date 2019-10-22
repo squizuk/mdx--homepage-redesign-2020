@@ -166,6 +166,11 @@ var navigation = function navigation() {
         item.classList.add('focusin');
       }
     });
+    item.addEventListener('blur', function () {
+      if ($(window).width() > 1180) {
+        removeFocusedStates();
+      }
+    });
   });
   menuLinks.forEach(function (link) {
     link.addEventListener('focusin', function () {
