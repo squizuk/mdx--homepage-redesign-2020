@@ -51,7 +51,7 @@ const navigation = () => {
                 removeFocusedStates();
                 item.classList.add('focusin');
             }
-        })  
+        })
     })
 
     menuLinks.forEach((link) => {

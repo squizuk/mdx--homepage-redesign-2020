@@ -598,7 +598,8 @@ video {
   visibility: visible;
   opacity: 1;
   width: 1907px;
-  height: auto; }
+  height: auto;
+  display: none; }
 
 @media screen and (min-width: 769px) {
   .hero-banner {
@@ -649,7 +650,9 @@ video {
       max-width: auto; }
     .hero-banner__pattern--white {
       display: block;
-      z-index: -1; } }
+      z-index: -1; }
+  video {
+    display: block; } }
 
 @media screen and (min-width: 56.25rem) {
   .hero-banner__box {

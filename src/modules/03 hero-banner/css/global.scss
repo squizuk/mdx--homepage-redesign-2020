@@ -172,6 +172,7 @@ video {
     opacity: 1;
     width: 1907px;
     height: auto;
+    display: none;
 }
 
 @media screen and (min-width: $tablet) {
@@ -243,6 +244,9 @@ video {
             display: block;
             z-index: -1;
         }
+    }
+    video {
+        display: block;
     }
 }
 
