@@ -72,13 +72,11 @@
         display: none;
         height: pxToRem(200);
         width: pxToRem(204);
-        background: repeating-linear-gradient(
-            -45deg,
-            $white,
-            $white 2px,
-            transparent 2px,
-            transparent 8px
-        );
+        background: repeating-linear-gradient(-45deg,
+                $white,
+                $white 2px,
+                transparent 2px,
+                transparent 8px);
         position: absolute;
         left: pxToRem(30);
         bottom: pxToRem(90);
@@ -155,6 +153,7 @@
         border: 0;
         appearance: none;
         border-radius: 0;
+
         &::-ms-clear {
             display: none;
         }
@@ -245,8 +244,10 @@ video {
             z-index: -1;
         }
     }
+
     video {
         display: block;
+        z-index: 0;
     }
 }
 
