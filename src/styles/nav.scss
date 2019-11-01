@@ -27,7 +27,9 @@ body {
     }
 
     @media (min-width: 1180px) {
-        padding-top: 0;
+        &.home {
+            padding-top: 0;
+        }
     }
 }
 
