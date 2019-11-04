@@ -52,11 +52,11 @@ const navigation = () => {
                 item.classList.add('focusin');
             }
         })
-        item.addEventListener('blur', () => {
-            if ($(window).width() > 1180) {
-                removeFocusedStates();
-            }
-        })
+        // item.addEventListener('blur', () => {
+        //     if ($(window).width() > 1180) {
+        //         removeFocusedStates();
+        //     }
+        // })
     })
 
     menuLinks.forEach((link) => {
