@@ -158,6 +158,9 @@ html {
   background: transparent;
   border-bottom: none; }
 
+.header-menu__list-right {
+  padding: 0; }
+
 .header-menu__link {
   font-family: Dax;
   line-height: 1.4; }
