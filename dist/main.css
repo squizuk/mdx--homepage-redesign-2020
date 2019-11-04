@@ -1053,6 +1053,8 @@ video {
       margin: 0;
       -webkit-transition: 0.5s all;
       transition: 0.5s all; }
+      .three-tiles__box-link:hover {
+        text-decoration: underline; }
       .three-tiles__box-link--a, .three-tiles__box-link--b, .three-tiles__box-link--c {
         background-color: #ffffff;
         color: #d52b1e;
@@ -1067,7 +1069,8 @@ video {
         transition: 0.5s all; }
         .three-tiles__box-link--a:hover, .three-tiles__box-link--b:hover, .three-tiles__box-link--c:hover {
           background-color: #bd251a;
-          color: #ffffff; }
+          color: #ffffff;
+          text-decoration: underline; }
     .three-tiles__box:first-child .three-tiles__box-link--a, .three-tiles__box:first-child .three-tiles__box-link--b, .three-tiles__box:first-child .three-tiles__box-link--c {
       background-color: #efefef; }
       .three-tiles__box:first-child .three-tiles__box-link--a:hover, .three-tiles__box:first-child .three-tiles__box-link--b:hover, .three-tiles__box:first-child .three-tiles__box-link--c:hover {
