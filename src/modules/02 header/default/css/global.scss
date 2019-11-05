@@ -59,6 +59,15 @@
     &-right {
         padding: 0;
     }
+    &::-webkit-scrollbar {
+        width: 15px;
+    }
+    &::-webkit-scrollbar-track {
+        background: $grey-dark;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $grey-light;
+    }
 }
 
 .header-menu__link {
@@ -70,7 +79,7 @@
 }
 
 .header-menu__link__sub:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .right-navigation__link {

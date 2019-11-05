@@ -161,6 +161,15 @@ html {
 .header-menu__list-right {
   padding: 0; }
 
+.header-menu__list::-webkit-scrollbar {
+  width: 15px; }
+
+.header-menu__list::-webkit-scrollbar-track {
+  background: #333333; }
+
+.header-menu__list::-webkit-scrollbar-thumb {
+  background-color: #d1d1d1; }
+
 .header-menu__link {
   font-family: Dax;
   line-height: 1.4; }
@@ -168,7 +177,7 @@ html {
     text-decoration: none; }
 
 .header-menu__link__sub:hover {
-  text-decoration: none; }
+  text-decoration: underline; }
 
 .right-navigation__link {
   font-family: Dax; }
