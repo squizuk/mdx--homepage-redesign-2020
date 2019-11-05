@@ -890,7 +890,7 @@ video {
       position: static; }
     .secondary-banner__box {
       position: absolute;
-      bottom: 4.375rem;
+      bottom: 1.875rem;
       left: 4.375rem;
       z-index: 1;
       text-align: left;
@@ -907,7 +907,7 @@ video {
 
 @media screen and (min-width: 1300px) {
   .secondary-banner__box {
-    left: 10rem; }
+    left: 9.375rem; }
   .secondary-banner__pattern--white {
     left: 41.875rem;
     bottom: 0; } }
