@@ -429,6 +429,15 @@ body {
     -webkit-box-shadow: inset 0 0 0 3px #4d4d4d;
             box-shadow: inset 0 0 0 3px #4d4d4d; }
 
+body {
+  scrollbar-face-color: #d1d1d1;
+  scrollbar-3dlight-color: #d1d1d1;
+  scrollbar-highlight-color: #d1d1d1;
+  scrollbar-track-color: #333333;
+  scrollbar-arrow-color: #333333;
+  scrollbar-shadow-color: #d1d1d1;
+  scrollbar-dark-shadow-color: #d1d1d1; }
+
 .hero-banner {
   position: relative;
   background: transparent;
@@ -1053,8 +1062,6 @@ video {
       margin: 0;
       -webkit-transition: 0.5s all;
       transition: 0.5s all; }
-      .three-tiles__box-link:hover {
-        text-decoration: underline; }
       .three-tiles__box-link--a, .three-tiles__box-link--b, .three-tiles__box-link--c {
         background-color: #ffffff;
         color: #d52b1e;
@@ -1069,8 +1076,7 @@ video {
         transition: 0.5s all; }
         .three-tiles__box-link--a:hover, .three-tiles__box-link--b:hover, .three-tiles__box-link--c:hover {
           background-color: #bd251a;
-          color: #ffffff;
-          text-decoration: underline; }
+          color: #ffffff; }
     .three-tiles__box:first-child .three-tiles__box-link--a, .three-tiles__box:first-child .three-tiles__box-link--b, .three-tiles__box:first-child .three-tiles__box-link--c {
       background-color: #efefef; }
       .three-tiles__box:first-child .three-tiles__box-link--a:hover, .three-tiles__box:first-child .three-tiles__box-link--b:hover, .three-tiles__box:first-child .three-tiles__box-link--c:hover {
