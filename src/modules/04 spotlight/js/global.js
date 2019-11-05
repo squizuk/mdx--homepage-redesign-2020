@@ -8,8 +8,18 @@ const showVideo = () => {
         videoOverlay.classList.add('hidden');
     }
 
-    videoOverlay.addEventListener('click', function() {
-        openVideo();
+    const closeVideo = () => {
+        videoBox.classList.remove('active');
+        videoOverlay.classList.remove('hidden');
+    }
+
+    document.addEventListener('click', function(e) {
+        if(e.target === videoOverlay) {
+            openVideo();
+        }
+        else {
+            closeVideo();
+        }
     })
 }
 
