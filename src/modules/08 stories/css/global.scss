@@ -54,6 +54,9 @@
             .stories__box--arrow {
                 transform: translateX(#{pxToRem(15)});
             }
+            .stories__box--second__title {
+                text-decoration: underline;
+            }
         }
 
         &__image {
@@ -136,6 +139,9 @@
             .stories__box--arrow {
                 transform: translateX(#{pxToRem(15)});
             }
+            .stories__box--second__title {
+                text-decoration: underline;
+            }
         }
 
         &__title {
@@ -172,6 +178,9 @@
         &:hover {
             .stories__box--arrow {
                 transform: translateX(#{pxToRem(15)});
+            }
+            .stories__box--second__title {
+                text-decoration: underline;
             }
         }
 
