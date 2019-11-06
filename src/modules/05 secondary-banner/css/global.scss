@@ -5,6 +5,10 @@
     z-index: 2;
     overflow: hidden;
 
+    &__cta {
+        margin-bottom: 10px;
+    }
+
     &__wrapper {
         margin: 0 auto;
         max-width: pxToRem(1200);
@@ -61,7 +65,7 @@
 
         @at-root {
             .secondary-banner--image & {
-                margin-top: pxToRem(100);
+                margin-top: pxToRem(200);
             }
 
             .secondary-banner--video & {
@@ -101,6 +105,10 @@
     .secondary-banner {
         margin-bottom: $section-margin-desktop;
         padding: 0 pxToRem(40);
+        &__cta {
+            margin-bottom: 0;
+            margin-right: 10px;
+        }
         &__wrapper {
             position: static;
         }
@@ -111,7 +119,7 @@
 
         &__box {
             position: absolute;
-            bottom: pxToRem(30);
+            bottom: pxToRem(70);
             left: pxToRem(70);
             z-index: 1;
             text-align: left;

@@ -828,6 +828,8 @@ video {
   margin-bottom: 3.125rem;
   z-index: 2;
   overflow: hidden; }
+  .secondary-banner__cta {
+    margin-bottom: 10px; }
   .secondary-banner__wrapper {
     margin: 0 auto;
     max-width: 75rem;
@@ -865,7 +867,7 @@ video {
     .secondary-banner__box.hidden {
       z-index: -1; }
     .secondary-banner--image .secondary-banner__box {
-      margin-top: 6.25rem; }
+      margin-top: 12.5rem; }
     .secondary-banner--video .secondary-banner__box {
       margin-top: 52%; }
     .secondary-banner__box .section-subheading {
@@ -886,11 +888,14 @@ video {
   .secondary-banner {
     margin-bottom: 4.6875rem;
     padding: 0 2.5rem; }
+    .secondary-banner__cta {
+      margin-bottom: 0;
+      margin-right: 10px; }
     .secondary-banner__wrapper {
       position: static; }
     .secondary-banner__box {
       position: absolute;
-      bottom: 1.875rem;
+      bottom: 4.375rem;
       left: 4.375rem;
       z-index: 1;
       text-align: left;
