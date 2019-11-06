@@ -18463,33 +18463,30 @@ showVideo();
 /* 15 */
 /***/ (function(module, exports) {
 
-var showVideo = function showVideo() {
-  var videoOverlay = document.querySelector('.secondary-banner__video-overlay');
-  var bannerBox = document.querySelector('.secondary-banner__box');
-  var bannerPattern = document.querySelector('.secondary-banner__pattern--white');
-
-  var openVideo = function openVideo() {
-    videoOverlay.classList.add('hidden');
-    bannerBox.classList.add('hidden');
-    bannerPattern.classList.add('hidden');
-  };
-
-  var closeVideo = function closeVideo() {
-    videoOverlay.classList.remove('hidden');
-    bannerBox.classList.remove('hidden');
-    bannerPattern.classList.remove('hidden');
-  };
-
-  document.addEventListener('click', function (e) {
-    if (e.target === videoOverlay) {
-      openVideo();
-    } else {
-      closeVideo();
-    }
-  });
-};
-
-showVideo();
+// const showVideo = () => {
+//     const videoOverlay = document.querySelector('.secondary-banner__video-overlay');
+//     const bannerBox = document.querySelector('.secondary-banner__box');
+//     const bannerPattern = document.querySelector('.secondary-banner__pattern--white');
+//     const openVideo = () => {
+//         videoOverlay.classList.add('hidden');
+//         bannerBox.classList.add('hidden');
+//         bannerPattern.classList.add('hidden');
+//     }
+//     const closeVideo = () => {
+//         videoOverlay.classList.remove('hidden');
+//         bannerBox.classList.remove('hidden');
+//         bannerPattern.classList.remove('hidden');
+//     }
+//     document.addEventListener('click', function(e) {
+//         if(e.target === videoOverlay) {
+//             openVideo();
+//         }
+//         else {
+//             closeVideo();
+//         }
+//     })
+// }
+// showVideo();
 
 /***/ }),
 /* 16 */
