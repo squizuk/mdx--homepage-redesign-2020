@@ -170,6 +170,21 @@ html {
 .header-menu__list::-webkit-scrollbar-thumb {
   background-color: #d1d1d1; }
 
+.header-menu__list::-webkit-scrollbar-button {
+  display: block;
+  width: 17px;
+  height: 17px; }
+
+.header-menu__list::-webkit-scrollbar-button:decrement:start {
+  background-image: url(mysource_files/arrow-up.svg);
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.header-menu__list::-webkit-scrollbar-button:increment:end {
+  background-image: url(mysource_files/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: center; }
+
 .header-menu__link {
   font-family: Dax;
   line-height: 1.4; }
@@ -473,26 +488,6 @@ html {
         display: block;
         font-size: 1.25rem;
         font-family: Arial; }
-      .header-menu__sub.list-long:after, .header-menu__third.list-long:after {
-        display: none;
-        content: '';
-        position: fixed;
-        z-index: 10;
-        left: 48%;
-        width: 15px;
-        height: 15px;
-        border-bottom: solid #ffffff 2px;
-        border-right: solid #ffffff 2px;
-        -webkit-transform: rotate(45deg);
-                transform: rotate(45deg);
-        top: calc(60vh + 30px); } }
-      @media screen and (min-width: 73.75rem) and (min-width: 56.25rem) {
-        .header-menu__sub.list-long:after, .header-menu__third.list-long:after {
-          display: block; } }
-
-@media screen and (min-width: 73.75rem) {
-    .header-menu__third.list-long:after {
-      left: 87%; }
     .header-menu__sub {
       left: 10%; }
     .header-menu__third {
