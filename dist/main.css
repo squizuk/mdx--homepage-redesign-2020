@@ -314,11 +314,13 @@ Modules
   .btn--red {
     background-color: #d52b1e; }
     .btn--red:hover {
-      background-color: #bd251a; }
+      background-color: #bd251a;
+      text-decoration: underline; }
   .btn--black {
     background-color: #000000; }
     .btn--black:hover {
-      background-color: #333333; }
+      background-color: #333333;
+      text-decoration: underline; }
   @media (max-width: 769px) {
     .btn {
       padding: 1.4375rem 1.875rem;
@@ -1079,6 +1081,8 @@ video {
       margin: 0;
       -webkit-transition: 0.5s all;
       transition: 0.5s all; }
+      .three-tiles__box-link:hover {
+        text-decoration: underline; }
       .three-tiles__box-link--a, .three-tiles__box-link--b, .three-tiles__box-link--c {
         background-color: #ffffff;
         color: #d52b1e;
@@ -1093,7 +1097,8 @@ video {
         transition: 0.5s all; }
         .three-tiles__box-link--a:hover, .three-tiles__box-link--b:hover, .three-tiles__box-link--c:hover {
           background-color: #bd251a;
-          color: #ffffff; }
+          color: #ffffff;
+          text-decoration: underline; }
     .three-tiles__box:first-child .three-tiles__box-link--a, .three-tiles__box:first-child .three-tiles__box-link--b, .three-tiles__box:first-child .three-tiles__box-link--c {
       background-color: #efefef; }
       .three-tiles__box:first-child .three-tiles__box-link--a:hover, .three-tiles__box:first-child .three-tiles__box-link--b:hover, .three-tiles__box:first-child .three-tiles__box-link--c:hover {
