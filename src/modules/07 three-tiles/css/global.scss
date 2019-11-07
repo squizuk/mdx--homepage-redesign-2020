@@ -75,6 +75,10 @@
             margin: 0;
             transition: 0.5s all;
 
+            &:hover {
+                text-decoration: underline;
+            }
+
             &--a,
             &--b,
             &--c {
@@ -92,6 +96,7 @@
                 &:hover {
                     background-color: $red-dark;
                     color: $white;
+                    text-decoration: underline;
                 }
             }
         }
