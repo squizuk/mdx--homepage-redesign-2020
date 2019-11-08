@@ -375,6 +375,10 @@
                         left: 10%;
                         position: fixed;
                         background: rgba(0, 0, 0, 0.9);
+                        background-image: url('./files/logo-megamenu.png');
+                        background-repeat: no-repeat;
+                        background-position: 85% center;
+                        background-size: 400px;
                     }
 
                     &::before {

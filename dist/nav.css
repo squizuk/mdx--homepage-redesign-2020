@@ -387,7 +387,11 @@ html {
         right: 10%;
         left: 10%;
         position: fixed;
-        background: rgba(0, 0, 0, 0.9); }
+        background: rgba(0, 0, 0, 0.9);
+        background-image: url(mysource_files/logo-megamenu.png);
+        background-repeat: no-repeat;
+        background-position: 85% center;
+        background-size: 400px; }
       .top-bar__left > .header-menu__list > .header-menu__item.hugemenu:hover::before {
         content: '';
         display: block;
