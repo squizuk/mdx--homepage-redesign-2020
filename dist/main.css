@@ -748,7 +748,7 @@ video {
   .spotlight__pattern--grey {
     position: absolute;
     left: 6.25rem;
-    bottom: -12.5rem;
+    bottom: 17.5rem;
     z-index: -3;
     display: none; }
     .spotlight__pattern--grey::after {
@@ -765,7 +765,7 @@ video {
     background: repeating-linear-gradient(-45deg, #ffffff, #ffffff 2px, transparent 2px, transparent 8px);
     position: absolute;
     left: 11.875rem;
-    bottom: -21.875rem;
+    bottom: 13.75rem;
     z-index: -2;
     display: none; }
   .spotlight__pattern--black {
@@ -917,7 +917,7 @@ video {
     left: 9.375rem; }
   .secondary-banner__pattern--white {
     left: 41.875rem;
-    bottom: 0; } }
+    bottom: 200px; } }
 
 .infographics {
   padding: 0;
@@ -985,7 +985,7 @@ video {
     background: repeating-linear-gradient(-45deg, #ffffff, #ffffff 2px, transparent 2px, transparent 8px);
     position: absolute;
     left: 6.25rem;
-    bottom: -13.125rem;
+    bottom: 6.875rem;
     display: none; }
   .infographics__pattern--white2 {
     height: 14.25rem;
@@ -993,7 +993,7 @@ video {
     background: repeating-linear-gradient(-45deg, #ffffff, #ffffff 2px, transparent 2px, transparent 8px);
     position: absolute;
     right: 6.25rem;
-    bottom: 15.625rem;
+    bottom: -10.625rem;
     display: none; }
 
 @media screen and (min-width: 769px) {
@@ -1107,7 +1107,7 @@ video {
   .three-tiles__pattern--grey1 {
     position: absolute;
     left: -3.125rem;
-    bottom: -6.25rem;
+    bottom: 6.25rem;
     display: none; }
     .three-tiles__pattern--grey1::after {
       content: '';
@@ -1120,7 +1120,7 @@ video {
   .three-tiles__pattern--grey2 {
     position: absolute;
     right: -3.4375rem;
-    bottom: 12.5rem;
+    bottom: 18.75rem;
     display: none; }
     .three-tiles__pattern--grey2::after {
       content: '';
@@ -1136,7 +1136,7 @@ video {
     background: repeating-linear-gradient(-45deg, #ffffff, #ffffff 2px, transparent 2px, transparent 8px);
     position: absolute;
     left: -3.75rem;
-    bottom: 12.5rem;
+    bottom: -0.625rem;
     display: none; }
   .three-tiles__pattern--white2 {
     height: 14.25rem;
@@ -1144,7 +1144,7 @@ video {
     background: repeating-linear-gradient(-45deg, #ffffff, #ffffff 2px, transparent 2px, transparent 8px);
     position: absolute;
     right: -6.25rem;
-    bottom: 31.25rem;
+    bottom: 18.75rem;
     display: none; }
 
 @media screen and (min-width: 769px) {
@@ -1359,12 +1359,12 @@ video {
     .stories__box--first__pattern--white {
       display: block;
       left: calc(50% - 1.875rem);
-      bottom: -9.375rem;
+      bottom: 5rem;
       top: auto; }
     .stories__box--first__pattern--red {
       display: block;
       top: auto;
-      bottom: -12.5rem; }
+      bottom: 8.75rem; }
     .stories__box--second__title {
       font-size: 1.25rem; } }
 

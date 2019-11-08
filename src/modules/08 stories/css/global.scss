@@ -253,14 +253,14 @@
         &__box--first__pattern--white {
             display: block;
             left: calc(50% - #{pxToRem(30)});
-            bottom: pxToRem(-150);
+            bottom: pxToRem(80);
             top: auto;
         }
 
         &__box--first__pattern--red {
             display: block;
             top: auto;
-            bottom: pxToRem(-200);
+            bottom: pxToRem(140);
         }
 
         &__box--second__title {
