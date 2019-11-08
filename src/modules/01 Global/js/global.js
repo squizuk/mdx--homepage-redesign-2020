@@ -6,7 +6,9 @@ const moveItItem = function (el) {
 };
 
 moveItItem.prototype.update = function (scrollTop) {
-    var transform = 'translateY(' + -(scrollTop / this.speed) + 'px)';
+    var top = this.el.offset().top;
+    var distance = top - scrollTop;
+    var transform = 'translateY(' + (distance / this.speed) + 'px)';
     this.el.css('transform', transform);
 };
 
@@ -37,13 +39,15 @@ $.fn.moveIt = function () {
 
     instances.forEach((inst) => {
         var scrollTop = $window.scrollTop();
-        inst.update(scrollTop);
+        // inst.update(scrollTop);
     })
 
     window.addEventListener('scroll', function () {
         var scrollTop = $window.scrollTop();
         instances.forEach(function (inst) {
-            inst.update(scrollTop);
+            if($(inst.el).isOnScreen()) {
+                inst.update(scrollTop);
+            }
         });
     }, { passive: true });
 }
