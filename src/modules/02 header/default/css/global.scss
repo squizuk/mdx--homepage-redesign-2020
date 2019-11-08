@@ -56,6 +56,33 @@
         background: transparent;
         border-bottom: none;
     }
+    &-right {
+        padding: 0;
+    }
+    &::-webkit-scrollbar {
+        width: 15px;
+    }
+    &::-webkit-scrollbar-track {
+        background: $grey-dark;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: $grey-light;
+    }
+    &::-webkit-scrollbar-button {
+        display: block;
+        width: 17px;
+        height: 17px;
+      }
+    &::-webkit-scrollbar-button:decrement:start {
+        background-image: url('./files/arrow-up.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    &::-webkit-scrollbar-button:increment:end {
+        background-image: url('./files/arrow-down.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+      }
 }
 
 .header-menu__link {
@@ -67,7 +94,7 @@
 }
 
 .header-menu__link__sub:hover {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .right-navigation__link {
@@ -496,31 +523,31 @@
                 font-size: $font-l;
                 font-family: $alt-font-family;
             }
-            &.list-long {
-                &:after {
-                    display: none;
-                    @media screen and (min-width: #{pxToRem(900)}) {
-                        display: block;
-                    }
-                    content: '';
-                    position: fixed;
-                    z-index: 10;
-                    left: 48%;
-                    width: 15px;
-                    height: 15px;
-                    border-bottom: solid $white 2px;
-                    border-right: solid $white 2px;
-                    transform: rotate(45deg);
-                    top: calc(60vh + 30px);
-                }
-            }
+            // &.list-long {
+            //     &:after {
+            //         display: none;
+            //         @media screen and (min-width: #{pxToRem(900)}) {
+            //             display: block;
+            //         }
+            //         content: '';
+            //         position: fixed;
+            //         z-index: 10;
+            //         left: 48%;
+            //         width: 15px;
+            //         height: 15px;
+            //         border-bottom: solid $white 2px;
+            //         border-right: solid $white 2px;
+            //         transform: rotate(45deg);
+            //         top: calc(60vh + 30px);
+            //     }
+            // }
         }
         &__third {
-            &.list-long {
-                &:after {
-                    left: 87%;
-                }
-            }
+            // &.list-long {
+            //     &:after {
+            //         left: 87%;
+            //     }
+            // }
         }
         &__sub {
             left: 10%;

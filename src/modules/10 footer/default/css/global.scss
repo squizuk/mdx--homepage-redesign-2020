@@ -45,12 +45,15 @@
                 padding-left: pxToRem(15);
                 padding-right: pxToRem(15);
             }
+            &:hover {
+                color: $red-dark;
+            }
         }
     }
 
     &__links {
         background-color: $grey-dark;
-        padding: pxToRem(70) 0;
+        padding: pxToRem(60) 0;
 
         &-wrapper {
             margin: 0 auto;
@@ -70,7 +73,7 @@
         }
 
         &-item {
-            padding: pxToRem(15) 0;
+            padding: pxToRem(9) 0;
         }
     }
 
@@ -80,12 +83,12 @@
         font-family: $alt-font-family;
         font-size: $font-s;
         &:hover {
-            text-decoration: none;
+            text-decoration: underline;
         }
     }
 
     &__contact-item {
-        color: $white;
+        color: #A8A8A8;
         font-family: $alt-font-family;
         font-size: $font-s;
         padding: 0;
@@ -107,6 +110,9 @@
         transition: 0.5s background-color;
         color: $white;
         display: inline-block;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 p.footer__socials-title {

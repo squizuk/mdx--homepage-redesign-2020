@@ -59,3 +59,13 @@ body {
         box-shadow: inset 0 0 0 3px $grey-medium;
     }
 }
+
+body {
+    scrollbar-face-color: $grey-light;
+    scrollbar-3dlight-color: $grey-light;
+    scrollbar-highlight-color: $grey-light;
+    scrollbar-track-color: $grey-dark;
+    scrollbar-arrow-color: $grey-light;
+    scrollbar-shadow-color: $grey-light;
+    scrollbar-dark-shadow-color: $grey-light;
+}

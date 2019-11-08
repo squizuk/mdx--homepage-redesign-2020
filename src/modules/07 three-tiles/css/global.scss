@@ -75,6 +75,10 @@
             margin: 0;
             transition: 0.5s all;
 
+            &:hover {
+                text-decoration: underline;
+            }
+
             &--a,
             &--b,
             &--c {
@@ -92,6 +96,7 @@
                 &:hover {
                     background-color: $red-dark;
                     color: $white;
+                    text-decoration: underline;
                 }
             }
         }
@@ -115,7 +120,7 @@
         &--grey1 {
             position: absolute;
             left: pxToRem(-50);
-            bottom: pxToRem(-100);
+            bottom: pxToRem(100);
             display: none;
 
             &::after {
@@ -131,7 +136,7 @@
         &--grey2 {
             position: absolute;
             right: pxToRem(-55);
-            bottom: pxToRem(200);
+            bottom: pxToRem(300);
             display: none;
 
             &::after {
@@ -156,7 +161,7 @@
             );
             position: absolute;
             left: pxToRem(-60);
-            bottom: pxToRem(200);
+            bottom: pxToRem(-10);
             display: none;
         }
 
@@ -172,7 +177,7 @@
             );
             position: absolute;
             right: pxToRem(-100);
-            bottom: pxToRem(500);
+            bottom: pxToRem(300);
             display: none;
         }
     }

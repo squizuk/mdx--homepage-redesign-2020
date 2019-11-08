@@ -107,7 +107,7 @@
         &--grey {
             position: absolute;
             left: pxToRem(100);
-            bottom: pxToRem(-200);
+            bottom: pxToRem(280);
             z-index: -3;
             display: none;
 
@@ -133,7 +133,7 @@
             );
             position: absolute;
             left: pxToRem(190);
-            bottom: pxToRem(-350);
+            bottom: pxToRem(220);
             z-index: -2;
             display: none;
         }
