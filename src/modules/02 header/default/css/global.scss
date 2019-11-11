@@ -113,6 +113,8 @@
             left: 0;
             position: relative;
             transform: translateZ(0);
+            box-sizing: border-box;
+            padding-left: 1em;
         }
 
         ul,
