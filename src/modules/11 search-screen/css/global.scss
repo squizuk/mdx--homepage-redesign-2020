@@ -16,7 +16,7 @@
     height: 100%;
     z-index: 10;
     top: 0;
-    position: absolute;
+    position: fixed;
     display: none;
 
     @at-root {
@@ -34,6 +34,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         &-close {
             margin-right: pxToRem(10);
         }
@@ -60,6 +61,7 @@
             &.tt-hint {
                 color: #afafaf;
             }
+
             &::-ms-clear {
                 display: none;
             }
@@ -106,7 +108,7 @@
             margin-bottom: pxToRem(20);
         }
 
-        .tt-dataset + .tt-dataset {
+        .tt-dataset+.tt-dataset {
             border-top: 1px solid $white;
             padding-top: pxToRem(20);
             margin-bottom: 0;
