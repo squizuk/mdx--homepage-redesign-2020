@@ -96,6 +96,9 @@ const navigation = () => {
                 if (hasSubmenu) {
                     removeAllActiveStates();
                     link.classList.add('active');
+                    menuItems.forEach((item) => {
+                        item.classList.remove('right-empty');
+                    })
                 }
             }
         });
@@ -103,6 +106,9 @@ const navigation = () => {
         link.addEventListener('mouseout', () => {
             if ($(window).width() > 1180) {
                 removeAllActiveStates();
+                menuItems.forEach((item) => {
+                    item.classList.add('right-empty');
+                })
             }
         })
     })

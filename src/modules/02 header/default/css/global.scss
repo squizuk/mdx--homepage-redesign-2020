@@ -370,7 +370,6 @@
                     &::after {
                         content: '';
                         height: 60vh;
-
                         display: block;
                         top: 87px;
                         right: 10%;
@@ -424,6 +423,16 @@
                             rgba(0, 0, 0, 0) 0%,
                             rgba(0, 0, 0, 0.9) 100%
                         );
+                    }
+                }
+            }
+            .top-bar__left > & > .header-menu__item.hugemenu.right-empty {
+                &:hover {
+                    &::after {
+                        background-image: url('./files/logo-megamenu.png');
+                        background-repeat: no-repeat;
+                        background-position: 86% center;
+                        background-size: 400px;
                     }
                 }
             }
