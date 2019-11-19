@@ -219,7 +219,8 @@ var navigation = function navigation() {
       }
     });
   });
-  menuButton.addEventListener('click', function () {
+  menuButton.addEventListener('click', function (e) {
+    e.preventDefault();
     menuList.classList.toggle('active');
     body.classList.toggle('menu-active');
     menuButtonIcon.classList.toggle('fa-bars');
@@ -240,13 +241,16 @@ var searchBar = function searchBar() {
     $(searchScreen).find('.tt-input').focus();
   };
 
-  searchButton && searchButton.addEventListener('click', function () {
+  searchButton && searchButton.addEventListener('click', function (e) {
+    e.preventDefault();
     showSearch();
   });
-  bannerInput && bannerInput.addEventListener('click', function () {
+  bannerInput && bannerInput.addEventListener('click', function (e) {
+    e.preventDefault();
     showSearch();
   });
-  closeButton && closeButton.addEventListener('click', function () {
+  closeButton && closeButton.addEventListener('click', function (e) {
+    e.preventDefault();
     searchScreen.classList.remove('active');
     body.classList.remove('blurred');
     $(searchScreen).find('.tt-input').val('');
