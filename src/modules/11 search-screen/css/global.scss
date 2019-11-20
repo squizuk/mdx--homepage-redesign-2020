@@ -57,6 +57,7 @@
             background-color: transparent;
             border: none;
             border-bottom: 4px solid $white;
+            box-sizing: border-box;
 
             &.tt-hint {
                 color: #afafaf;
