@@ -153,6 +153,7 @@
         border: 0;
         appearance: none;
         border-radius: 0;
+        box-sizing: border-box;
 
         &::-ms-clear {
             display: none;
