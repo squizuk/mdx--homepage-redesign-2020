@@ -636,11 +636,15 @@ function () {
 /***/ (function(module, exports) {
 
 (function () {
-  var courses = new Bloodhound({
+  var mainSearchHeading = globals.mainSearchHeading,
+      mainSearchUrl = globals.mainSearchUrl,
+      suggestionUrl = globals.suggestionUrl;
+  var mainSearch = new Bloodhound({
     datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
     queryTokenizer: Bloodhound.tokenizers.whitespace,
     remote: {
-      url: 'https://mdx.funnelback.co.uk/s/suggest.json?collection=mdx-courses&show=3&fmt=json++&partial_query=%QUERY',
+      // url: 'https://mdx.funnelback.co.uk/s/suggest.json?collection=mdx-courses&show=3&fmt=json++&partial_query=%QUERY',
+      url: mainSearchUrl,
       wildcard: '%QUERY',
       filter: function filter(engine) {
         return $.map(engine, function (item) {
@@ -662,7 +666,8 @@ function () {
     datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
     queryTokenizer: Bloodhound.tokenizers.whitespace,
     remote: {
-      url: 'https://mdx.funnelback.co.uk/s/suggest.json?collection=mdx-meta&show=5&partial_query=%QUERY',
+      // url: 'https://mdx.funnelback.co.uk/s/suggest.json?collection=mdx-meta&show=5&partial_query=%QUERY',
+      url: suggestionUrl,
       wildcard: '%QUERY',
       filter: function filter(engine) {
         var results = $.map(engine, function (item) {
@@ -683,13 +688,13 @@ function () {
       }
     }
   });
-  courses.clear();
+  mainSearch.clear();
   suggestion.clear();
   $('#multiple-datasets .typeahead').typeahead({
     highlight: true,
     minLength: 3
   }, {
-    name: 'Suggestion',
+    name: 'suggestion',
     display: 'value',
     limit: 7,
     source: suggestion,
@@ -700,12 +705,12 @@ function () {
       empty: '<p>Sorry, no results for this query</p>'
     }
   }, {
-    name: 'courses',
+    name: 'main',
     display: 'value',
     limit: 7,
-    source: courses,
+    source: mainSearch,
     templates: {
-      header: '<h3 class="search__suggestion-header">Courses</h3>',
+      header: '<h3 class="search__suggestion-header">' + mainSearchHeading + '</h3>',
       suggestion: function suggestion(el) {
         return "<a class=\"search__suggestion-component\" href=\"".concat(el.url, "\"><p class=\"search__suggestion-text\">").concat(el.value, "</p></a>");
       }
@@ -18468,13 +18473,15 @@ var showVideo = function showVideo() {
     videoOverlay.classList.remove('hidden');
   };
 
-  document.addEventListener('click', function (e) {
-    if (e.target === videoOverlay) {
-      openVideo();
-    } else {
-      closeVideo();
-    }
-  });
+  if (videoBox) {
+    document.addEventListener('click', function (e) {
+      if (e.target === videoOverlay) {
+        openVideo();
+      } else {
+        closeVideo();
+      }
+    });
+  }
 };
 
 showVideo();

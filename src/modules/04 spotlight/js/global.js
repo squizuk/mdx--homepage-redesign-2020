@@ -13,14 +13,16 @@ const showVideo = () => {
         videoOverlay.classList.remove('hidden');
     }
 
-    document.addEventListener('click', function(e) {
-        if(e.target === videoOverlay) {
-            openVideo();
-        }
-        else {
-            closeVideo();
-        }
-    })
+    if (videoBox) {
+        document.addEventListener('click', function (e) {
+            if (e.target === videoOverlay) {
+                openVideo();
+            } else {
+                closeVideo();
+            }
+        });
+    }
+
 }
 
 showVideo();

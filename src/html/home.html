@@ -4,6 +4,13 @@
 <head>
     <title>Home page</title>
     ${require('../modules/01 Global/html/head.html')}
+    <script>
+        var globals = {
+            mainSearchHeading: 'Courses',
+            mainSearchUrl: 'https://mdx.funnelback.co.uk/s/suggest.json?collection=mdx-courses&show=3&fmt=json++&partial_query=%QUERY',
+            suggestionUrl: 'https://mdx.funnelback.co.uk/s/suggest.json?collection=mdx-meta&show=5&partial_query=%QUERY'
+        }
+    </script>
 </head>
 
 <body class="home">
