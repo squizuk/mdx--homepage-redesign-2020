@@ -69,7 +69,7 @@
             }
 
             .secondary-banner--video & {
-                margin-top: 52%;
+                margin-top: 57%;
             }
         }
 
@@ -86,15 +86,14 @@
         height: pxToRem(200);
         width: pxToRem(204);
         z-index: 1;
-        background: repeating-linear-gradient(
-            -45deg,
-            $white,
-            $white 2px,
-            transparent 2px,
-            transparent 8px
-        );
+        background: repeating-linear-gradient(-45deg,
+                $white,
+                $white 2px,
+                transparent 2px,
+                transparent 8px);
         position: absolute;
         display: none;
+
         &.hidden {
             z-index: -1;
         }
@@ -105,10 +104,12 @@
     .secondary-banner {
         margin-bottom: $section-margin-desktop;
         padding: 0 pxToRem(40);
+
         &__cta {
             margin-bottom: 0;
             margin-right: 10px;
         }
+
         &__wrapper {
             position: static;
         }

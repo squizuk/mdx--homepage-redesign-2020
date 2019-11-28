@@ -1,9 +1,7 @@
 .spotlight {
-    background: linear-gradient(
-        180deg,
-        rgba(255, 255, 255, 0) 50%,
-        $bg-grey 50%
-    );
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0) 50%,
+            $bg-grey 50%);
     margin-bottom: $section-margin-mobile;
 
     .section-subheading {
@@ -85,7 +83,7 @@
             font-weight: 500;
             display: block;
 
-            & + & {
+            &+& {
                 margin-top: pxToRem(20);
             }
 
@@ -124,13 +122,11 @@
         &--white {
             height: pxToRem(388);
             width: pxToRem(392);
-            background: repeating-linear-gradient(
-                -45deg,
-                $white,
-                $white 2px,
-                transparent 2px,
-                transparent 8px
-            );
+            background: repeating-linear-gradient(-45deg,
+                    $white,
+                    $white 2px,
+                    transparent 2px,
+                    transparent 8px);
             position: absolute;
             left: pxToRem(190);
             bottom: pxToRem(220);
@@ -206,6 +202,12 @@
             padding: pxToRem(40);
             //margin-top: pxToRem(450);
         }
+
+        &-video {
+            .spotlight__box {
+                margin-top: 72%;
+            }
+        }
     }
 }
 
@@ -214,6 +216,7 @@
         &__wrapper {
             height: pxToRem(740);
         }
+
         &__image {
             //height: pxToRem(576);
             width: pxToRem(800);
