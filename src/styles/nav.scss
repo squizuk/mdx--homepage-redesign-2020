@@ -26,6 +26,10 @@ body {
         overflow: hidden;
     }
 
+    &.home {
+        padding-top: 80px;
+    }
+
     @media (min-width: 1180px) {
         &.home {
             padding-top: 0;
