@@ -46,10 +46,27 @@ const navigation = () => {
     }
 
     menuItems.forEach((item) => {
-        item.addEventListener('focusin', () => {
+        // item.addEventListener('focusin', () => {
+        //     if ($(window).width() > 1180) {
+        //         removeFocusedStates();
+        //         item.classList.add('focusin');
+        //     }
+        // })
+        item.addEventListener('keydown', (e, key) => {
+
+            if ($(window).width() > 1180 && e.keyCode === 32) {
+                e.preventDefault();
+                const isActive = item.classList.contains('focusin');
+                removeFocusedStates(item);
+                isActive ? item.classList.remove('focusin') : item.classList.add('focusin');
+            }
+
+            const hasSubmenu = $(link).find('.header-menu__third').length > 0;
+        })
+        item.addEventListener('mouseleave', (e, key) => {
+
             if ($(window).width() > 1180) {
-                removeFocusedStates();
-                item.classList.add('focusin');
+                removeFocusedStates(item);
             }
         })
         // item.addEventListener('blur', () => {
