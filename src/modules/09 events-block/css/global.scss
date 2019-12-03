@@ -32,6 +32,10 @@
         position: relative;
 
         &:hover {
+            h3 {
+                text-decoration: underline;
+            }
+
             .event__arrow {
                 transform: translateX(#{pxToRem(15)});
             }

@@ -61,12 +61,14 @@ const navigation = () => {
                 isActive ? item.classList.remove('focusin') : item.classList.add('focusin');
             }
 
-            const hasSubmenu = $(link).find('.header-menu__third').length > 0;
         })
-        item.addEventListener('mouseleave', (e, key) => {
+        item.addEventListener('mouseleave', (e) => {
 
             if ($(window).width() > 1180) {
                 removeFocusedStates(item);
+                menuLinks.forEach((link) => {
+                    removeFocusedStates(link);
+                })
             }
         })
         // item.addEventListener('blur', () => {

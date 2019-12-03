@@ -163,10 +163,26 @@ var navigation = function navigation() {
   };
 
   menuItems.forEach(function (item) {
-    item.addEventListener('focusin', function () {
+    // item.addEventListener('focusin', () => {
+    //     if ($(window).width() > 1180) {
+    //         removeFocusedStates();
+    //         item.classList.add('focusin');
+    //     }
+    // })
+    item.addEventListener('keydown', function (e, key) {
+      if ($(window).width() > 1180 && e.keyCode === 32) {
+        e.preventDefault();
+        var isActive = item.classList.contains('focusin');
+        removeFocusedStates(item);
+        isActive ? item.classList.remove('focusin') : item.classList.add('focusin');
+      }
+    });
+    item.addEventListener('mouseleave', function (e) {
       if ($(window).width() > 1180) {
-        removeFocusedStates();
-        item.classList.add('focusin');
+        removeFocusedStates(item);
+        menuLinks.forEach(function (link) {
+          removeFocusedStates(link);
+        });
       }
     }); // item.addEventListener('blur', () => {
     //     if ($(window).width() > 1180) {
