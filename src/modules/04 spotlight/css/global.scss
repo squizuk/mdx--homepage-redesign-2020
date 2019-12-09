@@ -27,7 +27,7 @@
         height: pxToRem(500);
         // width: pxToRem(800);
         width: 100%;
-        position: absolute;
+        position: relative;
         // right: pxToRem(110);
         // top: pxToRem(230);
         z-index: -1;
@@ -63,7 +63,7 @@
         max-width: pxToRem(536);
         text-align: left;
         margin: 0 pxToRem(10);
-        margin-top: pxToRem(200);
+        // margin-top: pxToRem(200);
 
         &-text {
             margin: 0;
@@ -173,9 +173,8 @@
 @media screen and (min-width: $tablet) {
     .spotlight {
         margin-bottom: $section-margin-desktop;
-        padding-bottom: pxToRem(120);
         overflow: hidden;
-        padding: 0 pxToRem(40);
+        padding: 0 pxToRem(40) pxToRem(80);
         // .section-subheading {
         //     margin-bottom: pxToRem(80);
         // }
@@ -203,11 +202,15 @@
             //margin-top: pxToRem(450);
         }
 
-        &-video {
-            .spotlight__box {
-                margin-top: 72%;
-            }
+        &__video {
+            position: absolute;
         }
+
+        // &-video {
+        //     .spotlight__box {
+        //         margin-top: 65%;
+        //     }
+        // }
     }
 }
 
