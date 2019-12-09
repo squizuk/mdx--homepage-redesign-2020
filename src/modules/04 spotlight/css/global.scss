@@ -206,6 +206,10 @@
             position: absolute;
         }
 
+        &__box-link {
+            font-size: 1.2rem;
+        }
+
         // &-video {
         //     .spotlight__box {
         //         margin-top: 65%;
@@ -228,6 +232,7 @@
         &__video {
             height: pxToRem(576);
             width: pxToRem(1024);
+            left: 10%;
         }
     }
 }
