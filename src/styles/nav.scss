@@ -20,15 +20,22 @@ body {
     line-height: 1.4;
     padding: 0;
     margin: 0;
-    padding-top: 100px; // height of .top-bar navigation with extra padding
+    padding-top: 100px; // height of .top-bar navigation with padding for content pages
 
     &.menu-active {
         overflow: hidden;
     }
 
     &.home {
-        padding-top: 87px; // height of .top-bar navigation
+        padding-top: 80px; // height of .top-bar navigation
     }
+
+    @media screen and (min-width: #{pxToRem(1180)}) {
+        &.home {
+            padding-top: 87px; // height of .top-bar navigation
+        }
+    }
+
 }
 
 html {
