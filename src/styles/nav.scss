@@ -20,20 +20,14 @@ body {
     line-height: 1.4;
     padding: 0;
     margin: 0;
-    padding-top: 100px; // height of .top-bar navigation
+    padding-top: 100px; // height of .top-bar navigation with extra padding
 
     &.menu-active {
         overflow: hidden;
     }
 
     &.home {
-        padding-top: 80px;
-    }
-
-    @media (min-width: 1180px) {
-        &.home {
-            padding-top: 0;
-        }
+        padding-top: 87px; // height of .top-bar navigation
     }
 }
 
