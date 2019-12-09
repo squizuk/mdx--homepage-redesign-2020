@@ -161,7 +161,7 @@ const searchBar = () => {
 
     bannerInput && bannerInput.addEventListener('click', function (e) {
         e.preventDefault();
-        showSearch();
+        // showSearch();
     });
 
     closeButton && closeButton.addEventListener('click', function (e) {

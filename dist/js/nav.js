@@ -158,8 +158,7 @@ var searchBar = function searchBar() {
     showSearch();
   });
   bannerInput && bannerInput.addEventListener('click', function (e) {
-    e.preventDefault();
-    showSearch();
+    e.preventDefault(); // showSearch();
   });
   closeButton && closeButton.addEventListener('click', function (e) {
     e.preventDefault();
@@ -646,6 +645,21 @@ module.exports = __webpack_require__(3);
 
     if (datum && datum.url) {
       window.location.href = datum.url;
+    }
+  });
+  $('.hero-banner__search-input .typeahead').typeahead({
+    highlight: true,
+    minLength: 3
+  }, {
+    name: 'suggestion',
+    display: 'value',
+    limit: 7,
+    source: suggestion,
+    templates: {
+      suggestion: function suggestion(el) {
+        return "<div class=\"search__suggestion-component\">".concat(el.value, "</div>");
+      },
+      empty: '<p>Sorry, no results for this query</p>'
     }
   });
 })();
