@@ -199,13 +199,6 @@ var navigation = function navigation() {
         link.classList.add('focusin');
       }
     });
-    link.addEventListener('focusout', function () {
-      if ($(window).width() > 1180) {
-        menuLinks.forEach(function (link) {
-          link.classList.remove('focusin');
-        });
-      }
-    });
   });
   menuItemsSeconds.forEach(function (link) {
     if (link.getElementsByTagName('li').length >= 8) {
@@ -764,6 +757,11 @@ function () {
       },
       empty: '<p>Sorry, no results for this query</p>'
     }
+  });
+  $('.hero-banner__search-input .tt-hint').attr('title', 'Search query hint');
+  $('.hero-banner__search-input .tt-input').attr({
+    'title': 'Search query',
+    'name': 'query'
   });
 })();
 

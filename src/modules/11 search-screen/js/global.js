@@ -114,4 +114,10 @@
             empty: '<p>Sorry, no results for this query</p>'
         }
     });
+
+    $('.hero-banner__search-input .tt-hint').attr('title', 'Search query hint');
+    $('.hero-banner__search-input .tt-input').attr({
+        'title': 'Search query',
+        'name': 'query'
+    });
 })();

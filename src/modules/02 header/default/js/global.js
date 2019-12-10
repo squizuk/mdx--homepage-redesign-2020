@@ -87,14 +87,6 @@ const navigation = () => {
                 link.classList.add('focusin');
             }
         })
-
-        link.addEventListener('focusout', () => {
-            if ($(window).width() > 1180) {
-                menuLinks.forEach((link) => {
-                    link.classList.remove('focusin');
-                });
-            }
-        })
     })
 
     menuItemsSeconds.forEach((link) => {
