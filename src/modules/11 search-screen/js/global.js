@@ -92,6 +92,13 @@
         }
     });
 
+    $('#multiple-datasets .tt-hint').attr('title', 'Search query hint');
+    $('#multiple-datasets .tt-input').attr({
+        'title': 'Search query',
+        'name': 'query'
+    });
+
+
     $('.hero-banner__search-input .typeahead').typeahead({
         highlight: true,
         minLength: 3,

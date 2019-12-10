@@ -24,8 +24,10 @@
     }
 
     &__video {
-        height: pxToRem(500);
+        // height: pxToRem(500);
         // width: pxToRem(800);
+        padding: 28.25%;
+        margin-bottom: pxToRem(13);
         width: 100%;
         position: relative;
         // right: pxToRem(110);
@@ -97,6 +99,15 @@
                 float: right;
                 padding-top: pxToRem(5);
                 transition: 0.5s all;
+            }
+        }
+
+        &-list {
+            padding: 0;
+            list-style: none;
+
+            &__item {
+                margin-bottom: pxToRem(10);
             }
         }
     }
@@ -205,6 +216,8 @@
         &__video {
             position: absolute;
             top: 8.5rem;
+            height: pxToRem(500);
+            padding: 0;
         }
 
         &__box-link {

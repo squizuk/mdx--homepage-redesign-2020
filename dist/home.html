@@ -429,7 +429,7 @@
                 <a href="#" class="top-bar__search">
                     <img src="mysource_files/search-white.svg" alt="search icon">
                 </a>
-                <a href="#" class="top-bar__hamburger">
+                <a href="#" class="top-bar__hamburger" role="presentation">
                     <i class="fa fa-bars hamburger-icon"></i>
                     <!-- <i class="fa fa-times close-icon"></i> -->
                 </a>
@@ -453,7 +453,8 @@
             <div class="hero-banner__search-wrapper">
                 <div id="bloodhound" class="hero-banner__search-input">
                     <button type="submit" class="hero-banner__search-btn"><span class="sr-only"></span></button>
-                    <input type="text" class="typeahead" placeholder="Search">
+                    <input type="text" class="typeahead"
+                        placeholder="Search undergraduate, postgraduate, degree apprenticeships...">
                 </div>
             </div>
             <div class="hero-banner__ctas">
@@ -507,8 +508,8 @@
     </div>
 </div>
 
-            <!-- <div class="spotlight spotlight-image" id="spotlight-section"> -->
-<div class="spotlight spotlight-video" id="spotlight-section">
+            <div class="spotlight spotlight-image" id="spotlight-section">
+    <!-- <div class="spotlight spotlight-video" id="spotlight-section"> -->
     <div class="spotlight__wrapper">
         <h2 class="section-heading">"Spotlight" heading"</h2>
         <p class="section-subheading">
@@ -527,14 +528,24 @@
                 Paragraph to summarise content of spotlight section text text
                 text text text text text text text text text text text
             </p>
-            <a href="#" class="spotlight__box-link">CTA 1 text text text
-                <i class="fa fa-chevron-right spotlight__box-link__arrow"></i></a>
-            <a href="#" class="spotlight__box-link">CTA 1 text text text
-                <i class="fa fa-chevron-right spotlight__box-link__arrow"></i>
-            </a>
-            <a href="#" class="spotlight__box-link">CTA 1 text text text
-                <i class="fa fa-chevron-right spotlight__box-link__arrow"></i>
-            </a>
+            <ul class="spotlight__box-list">
+                <li class="spotlight__box-list__item">
+                    <a href="#" class="spotlight__box-link">CTA 1 text text text
+                        <i class="fa fa-chevron-right spotlight__box-link__arrow"></i>
+                    </a>
+                </li>
+                <li class="spotlight__box-list__item">
+                    <a href="#" class="spotlight__box-link">CTA 1 text text text
+                        <i class="fa fa-chevron-right spotlight__box-link__arrow"></i>
+                    </a>
+                </li>
+                <li class="spotlight__box-list__item">
+                    <a href="#" class="spotlight__box-link">CTA 1 text text text
+                        <i class="fa fa-chevron-right spotlight__box-link__arrow"></i>
+                    </a>
+                </li>
+            </ul>
+
         </div>
         <div class="spotlight__pattern--white" data-scroll-speed="8"></div>
         <div class="spotlight__pattern--grey" data-scroll-speed="4"></div>

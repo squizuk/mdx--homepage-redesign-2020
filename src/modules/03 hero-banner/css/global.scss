@@ -158,6 +158,11 @@
         &::-ms-clear {
             display: none;
         }
+
+        &::placeholder,
+        &::-webkit-input-placeholder {
+            opacity: 0;
+        }
     }
 }
 
@@ -243,6 +248,14 @@ video {
         &__pattern--white {
             display: block;
             z-index: -1;
+        }
+
+        &__search-wrapper input[type='text'] {
+
+            &::placeholder,
+            &::-webkit-input-placeholder {
+                opacity: 1;
+            }
         }
     }
 

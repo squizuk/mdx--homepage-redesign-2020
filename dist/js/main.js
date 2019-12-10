@@ -199,6 +199,13 @@ var navigation = function navigation() {
         link.classList.add('focusin');
       }
     });
+    link.addEventListener('focusout', function () {
+      if ($(window).width() > 1180) {
+        menuLinks.forEach(function (link) {
+          link.classList.remove('focusin');
+        });
+      }
+    });
   });
   menuItemsSeconds.forEach(function (link) {
     if (link.getElementsByTagName('li').length >= 8) {
@@ -737,6 +744,11 @@ function () {
     if (datum && datum.url) {
       window.location.href = datum.url;
     }
+  });
+  $('#multiple-datasets .tt-hint').attr('title', 'Search query hint');
+  $('#multiple-datasets .tt-input').attr({
+    'title': 'Search query',
+    'name': 'query'
   });
   $('.hero-banner__search-input .typeahead').typeahead({
     highlight: true,
