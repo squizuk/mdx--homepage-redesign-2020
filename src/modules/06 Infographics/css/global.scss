@@ -19,9 +19,7 @@
     &__grey-wrapper {
         text-align: center;
         background: $bg-grey;
-        margin-top: pxToRem(
-            115
-        ); // 75px - half of circle + 40px additional margin
+        margin-top: pxToRem(115); // 75px - half of circle + 40px additional margin
         padding-bottom: pxToRem(50);
         position: relative;
     }
@@ -39,8 +37,10 @@
         text-align: center;
         margin: 0 pxToRem(10) pxToRem(20) pxToRem(10);
         z-index: 8;
+        flex-basis: 0;
 
-        & .fas, & .fab {
+        & .fas,
+        & .fab {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -81,13 +81,11 @@
         &--white1 {
             height: pxToRem(228);
             width: pxToRem(232);
-            background: repeating-linear-gradient(
-                -45deg,
-                $white,
-                $white 2px,
-                transparent 2px,
-                transparent 8px
-            );
+            background: repeating-linear-gradient(-45deg,
+                    $white,
+                    $white 2px,
+                    transparent 2px,
+                    transparent 8px);
             position: absolute;
             left: pxToRem(100);
             bottom: pxToRem(110);
@@ -97,13 +95,11 @@
         &--white2 {
             height: pxToRem(228);
             width: pxToRem(232);
-            background: repeating-linear-gradient(
-                -45deg,
-                $white,
-                $white 2px,
-                transparent 2px,
-                transparent 8px
-            );
+            background: repeating-linear-gradient(-45deg,
+                    $white,
+                    $white 2px,
+                    transparent 2px,
+                    transparent 8px);
             position: absolute;
             right: pxToRem(100);
             bottom: pxToRem(-170);
@@ -135,6 +131,7 @@
 
 @media screen and (min-width: $desktop) {
     .infographics {
+
         &__pattern--white1,
         &__pattern--white2 {
             display: block;

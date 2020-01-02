@@ -140,6 +140,14 @@
     .secondary-banner {
         &__pattern--white {
             left: pxToRem(570);
+
+            &.pos-left {
+                left: pxToRem(420);
+            }
+
+            &.pos-right {
+                left: pxToRem(680);
+            }
         }
     }
 }
@@ -153,6 +161,14 @@
         &__pattern--white {
             left: pxToRem(670);
             bottom: 200px;
+
+            &.pos-left {
+                left: pxToRem(470);
+            }
+
+            &.pos-right {
+                left: pxToRem(770);
+            }
         }
     }
 }
