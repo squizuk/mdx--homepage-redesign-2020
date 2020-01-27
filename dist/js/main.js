@@ -217,28 +217,47 @@ var navigation = function navigation() {
       if (hasSubmenu) {
         link.firstElementChild.insertAdjacentHTML('beforeend', '<i class="fa fa-chevron-right"></i>');
       }
-    }
+    } // let test = setTimeout(() => {
+    //     this.classList.add('active');
+    //     menuItems.forEach((item) => {
+    //         item.classList.remove('right-empty');
+    //     });
+    //     console.log('test 3')
+    // }, 300);
+    // let timer;
 
-    link.addEventListener('mouseover', function () {
+
+    link.addEventListener('mouseover', function (yo) {
       if ($(window).width() > 1180) {
         var _hasSubmenu = $(link).find('.header-menu__third').length > 0;
 
+        removeAllActiveStates();
+
         if (_hasSubmenu) {
-          removeAllActiveStates();
+          // timer = setTimeout(() => {
           link.classList.add('active');
           menuItems.forEach(function (item) {
             item.classList.remove('right-empty');
           });
+          console.log('test 1'); // }, 300);
+        } else {
+          menuItems.forEach(function (item) {
+            item.classList.add('right-empty');
+          });
         }
       }
     });
-    link.addEventListener('mouseout', function () {
-      if ($(window).width() > 1180) {
-        removeAllActiveStates();
-        menuItems.forEach(function (item) {
-          item.classList.add('right-empty');
-        });
-      }
+    link.addEventListener('mouseleave', function () {
+      link.classList.remove('focusin');
+      $(link).find('a').blur(); // if ($(window).width() > 1180) {
+      //     // menuItems.forEach((item) => {
+      //     // setTimeout(() => {
+      // removeAllActiveStates();
+      //     item.classList.add('right-empty');
+      //     // }, 600);
+      //     // })
+      // }
+      // clearTimeout(timer);
     });
   });
   menuButton.addEventListener('click', function (e) {
@@ -287,7 +306,7 @@ searchBar();
 
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
