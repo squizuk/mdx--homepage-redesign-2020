@@ -278,5 +278,9 @@ video {
 @media screen and(min-width: #{pxToRem(1180)}) {
     .hero-banner {
         height: 100vh;
+
+        &.has-video .hero-banner__image {
+            display: none;
+        }
     }
 }
